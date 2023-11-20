@@ -1,0 +1,26 @@
+html {
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* sourced code from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
+
+  @font-face {
+    font-family: "NeueMontreal";
+    src: local("NeueMontrea-Boldl"), url(fonts/NeueMontreal-Bold.otf) format("opentype");
+    src: url(fonts/NeueMontreal-BoldItalic.otf) format("opentype");
+    src: url(fonts/NeueMontreal-Italic.otf) format("opentype");
+    src: url(fonts/NeueMontreal-Light.otf) format("opentype");
+    src: url(fonts/NeueMontreal-LightItalic.otf) format("opentype");
+    src: url(fonts/NeueMontreal-Medium.otf) format("opentype");
+    src: url(fonts/NeueMontreal-MediumItalic.otf) format("opentype");
+    src: url(fonts/NeueMontreal-Regular.otf) format("opentype");
+  }
+
+  body {
+    font-size: 1.6rem;
+    font-family: 'NeueMontreal', Arial, sans-serif;
+  }
