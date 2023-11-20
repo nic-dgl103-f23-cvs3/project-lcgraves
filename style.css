@@ -23,4 +23,44 @@ html {
   body {
     font-size: 1.6rem;
     font-family: 'NeueMontreal', Arial, sans-serif;
+    margin: 0 auto;
+  }
+
+  /* Header */
+
+  header {
+    background-color: rgb(20, 66, 63);
+    font-size: 1.1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+    justify-content: space-evenly;
+    list-style-type: none;
+    color: white;
+  }
+
+  .show-items {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  nav ul li {
+    padding-right: 1.7em;
+  }
+
+  .logo {
+    padding-left: 2em;
+  }
+
+  .social-media {
+    padding-right: 2em;
   }
