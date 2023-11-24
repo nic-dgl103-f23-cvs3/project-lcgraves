@@ -14,6 +14,7 @@ html {
   body {
     font-size: 1.2rem;
     font-family: 'Figtree', sans-serif;
+    color: #14423f;
     margin: 0 auto;
   }
   
@@ -101,7 +102,8 @@ html {
     border-radius: 25px;
     text-align: center;
     border: 1px solid white;
-    background-color: #14423f;;
+    background-color: #14423f;
+    box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
   }
 
   .site-buttons .primary a {
@@ -118,6 +120,8 @@ html {
     border-radius: 25px;
     text-align: center;
     border: 1px solid #00ffbe;
+    box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
+
   }
 
 
@@ -132,6 +136,7 @@ h2 a {
   font-weight: 500;
   border: 1px solid black;
   border-radius: 25px;
+  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
 }
 
 .performers h2 {
@@ -183,7 +188,7 @@ h3 {
 .performers .site-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 
 button.secondary {
@@ -200,8 +205,43 @@ button.secondary {
 
 h2 {
   text-align: center;
+  padding: 2em 0;
 }
 
+/* The Experience */
 
+.experience {
+  text-align: center;
+}
 
+.experience p {
+  font-family: 'Neue Montreal';
+  padding: 0 2em 0 2em;
+  text-align: left;
+  color: #14423f;
+}
+
+.experience img {
+  width: 90%;
+  border: 2px solid #ebf9fc;
+  border-radius: 18px;
+}
+
+.experience .primary {
+  background-color: #00ffbe;
+  padding: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #00ffbe;
+  box-shadow:  rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.experience button a {
+  text-decoration: none;
+  color: #14423f;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+/* About */
 
