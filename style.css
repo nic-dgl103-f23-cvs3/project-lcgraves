@@ -67,10 +67,52 @@ html {
   .hero h1 {
     font-size: 3rem;
     color: white;
+    opacity: 90%;
     z-index: 1;
     margin: 0;
-    padding: 1em 0 2.5em .3em;
+    padding: 1.3em 0 2.5em .3em;
   }
+  
+  .hero-buttons a {
+    font-size: .9rem;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 1em;
+    text-decoration: none;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .secondary {
+    background-color: white, 95%;
+    margin: 2em;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid black;
+  }
+
+  .secondary a {
+    color: #248a85;
+    box-shadow: #042a2b;
+    font-weight: 600;
+  }
+
+  .primary {
+    background-color: #00ffbe;
+    margin: 2em;
+    border-radius: 25px;
+    text-align: center;
+    border: 1px solid #00ffbe;
+  }
+
+  .primary a {
+    color: black;
+    font-weight: 600;
+  }
+
 
 
 
