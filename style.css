@@ -57,7 +57,9 @@ p {
 /* Header */
 
 header {
-  background-color: #14423f;
+  /* gradient copied and modified from https://cssgradient.io/ */
+  background: rgb(20, 66, 63);
+  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
@@ -273,9 +275,10 @@ h2 {
   background-color: #fdffff;
 }
 
-.sign-up h2, .territory-acknowledgement h2 {
+.sign-up h2,
+.territory-acknowledgement h2 {
   margin: 2.5em auto;
-  padding:.5em;
+  padding: .5em;
   width: 80%;
   font-weight: 500;
   border: 1px solid #14423f;
@@ -297,7 +300,8 @@ fieldset {
   border-radius: 18px;
 }
 
-input, label {
+input,
+label {
   margin: .2em
 }
 
@@ -331,6 +335,55 @@ input.submit {
   width: 90%;
   border: 2px solid #ebf9fc;
   border-radius: 18px;
-  margin-top: 3em;
-  margin-bottom: 0;
+  margin: 3em auto;
+
+}
+
+/* Footer */
+
+footer {
+  padding: 3em auto;
+  margin: 0 auto;
+  background: rgb(20, 66, 63);
+  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
+  color: white;
+  font-size: 1.2em;
+}
+
+footer h4 {
+  padding-top: 3em;
+  font-family: 'Neue Montreal';
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+footer a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  margin: .2em auto;
+}
+
+address {
+  margin: 1.5em;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+footer .social-media {
+  margin: 1em 5em;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.designed-by {
+  padding-bottom: 5em;
+  margin: 0 auto;
 }
