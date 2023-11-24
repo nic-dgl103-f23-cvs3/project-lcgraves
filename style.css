@@ -1,11 +1,13 @@
 html {
   font-size: 62.5%;
   background-image: url(images/blue-gradient-unsplash.jpg);
+
 }
 
 
 * {
   box-sizing: border-box;
+  transition: all .2s ease-in-out; /* check out bezier curve transition-timing-function */
 }
 
 
@@ -69,9 +71,20 @@ header {
 
 nav ul {
   display: none;
-  justify-content: space-evenly;
   list-style-type: none;
+  justify-content: flex-start;
+  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
+  opacity: 90%;
+  width: 100vw;
+  height: 100vh;
   color: white;
+  z-index: 2;
+  position: absolute;
+  top: -1em;
+  left:0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding-top: 3em;
 }
 
 .show-items {
@@ -86,6 +99,7 @@ nav a {
 
 nav ul li {
   padding-right: 1.7em;
+  margin: 1.5em 0;
 }
 
 /* HERO */
@@ -97,13 +111,16 @@ nav ul li {
 }
 
 .hero-video video {
-  width: 100%;
   z-index: -1;
+  object-fit: cover;
+  position: absolute;
+  top: 3em;
+  left: 0;
 }
 
 .hero h1 {
+  text-align: left;
   position: relative;
-  top: -9em;
   font-size: 2.5rem;
   font-weight: 500;
   color: white;
@@ -124,8 +141,6 @@ nav ul li {
 }
 
 .hero .site-buttons {
-  position: relative;
-  top: -16.5em;
   display: flex;
   justify-content: space-evenly;
 }
@@ -168,7 +183,7 @@ button.primary {
 .performers h2 {
   text-align: center;
   padding: 1em 0 1em 0;
-  margin: -8.5em 0 1.5em 0;
+  margin: 4em 0 1.5em 0;
 }
 
 .performers {
@@ -193,7 +208,6 @@ button.primary {
   text-transform: uppercase;
   position: absolute;
   bottom: -5px;
-  ;
   left: 60px;
   width: 40px;
   z-index 1;
@@ -209,7 +223,7 @@ button.primary {
 .performers .site-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 button.secondary {
@@ -228,10 +242,6 @@ button.secondary {
   text-transform: uppercase;
 }
 
-h2 {
-  padding: 4em 0 2em 0;
-}
-
 /* The Experience */
 
 .experience {
@@ -242,7 +252,7 @@ h2 {
   width: 90%;
   border: 2px solid #ebf9fc;
   border-radius: 18px;
-  margin-top: 3em;
+  margin-top: 2em;
   margin-bottom: 0;
 }
 
@@ -387,3 +397,7 @@ footer p {
   padding-bottom: 5em;
   margin: 0 auto;
 }
+
+/* on desktop - all content blocks should have a max-width of 1170 and margin right and left auto
+if there's a background - add an internal wrapper div all content in there and add the 1170 margin auto to the div, then add background color to the section  */
+
