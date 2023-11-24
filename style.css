@@ -1,128 +1,160 @@
 html {
-    font-size: 62.5%;
-    background-image: url(images/blue-gradient-unsplash.jpg);
+  font-size: 62.5%;
+  background-image: url(images/blue-gradient-unsplash.jpg);
 }
 
 
-  * {
-    box-sizing: border-box;
-  }
+* {
+  box-sizing: border-box;
+}
 
 
-  /* Typography */
+/* Typography */
 
-  body {
-    font-size: 1.2rem;
-    font-family: 'Figtree', sans-serif;
-    color: #14423f;
-    margin: 0 auto;
-  }
-  
-  /* Header */
+body {
+  font-size: 1.3rem;
+  font-family: 'Figtree', sans-serif;
+  color: #14423f;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  header {
-    background-color: #14423f;
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: .4em 1em;
-  }
+h2 {
+  text-align: center;
+  padding: 4em .5em 2em .5em;
+  font-size: 1.8rem;
+  margin-top: 1em;
+  font-weight: 500;
+}
 
-  nav ul {
-    display: none;
-    justify-content: space-evenly;
-    list-style-type: none;
-    color: white;
-  }
+h2 a {
+  color: #042a2b;
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
+}
 
-  .show-items {
-    display: flex;
-    flex-direction: column;
-  }
+h3 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding-left: 1.5em;
+  font-weight: 300;
+  text-align: left;
+}
 
-  nav a {
-    text-decoration: none;
-    color: white;
-  }
+p {
+  margin: .5em auto 1.5em auto;
+  padding: 0 2em 0 2em;
+  text-align: left;
+  font-weight: 300;
+}
 
-  nav ul li {
-    padding-right: 1.7em;
-  }
+/* Header */
 
-  /* HERO */
+header {
+  background-color: #14423f;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .4em 1em;
+}
 
-  .hero-video {
-    color: white;
-    align-items: center;
-    justify-content: center;
-  }
+nav ul {
+  display: none;
+  justify-content: space-evenly;
+  list-style-type: none;
+  color: white;
+}
 
-  .hero-video video {
-    width: 100%;
-    z-index: -1;
-  }
+.show-items {
+  display: flex;
+  flex-direction: column;
+}
 
-  .hero h1 {
-    position: relative;
-    top: -8.2em;
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: white;
-    opacity: 90%;
-    z-index: 1;
-    margin: 0;
-    padding: 1.3em 0 3.5em .3em;
-  }
-  
-  .site-buttons a {
-    display: inline-block;
-    font-size: .8rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    padding: .6em;
-    text-decoration: none;
-  }
+nav a {
+  text-decoration: none;
+  color: white;
+}
 
-  .hero .site-buttons {
-    position: relative;
-    top: -18em;
-    display: flex;
-    justify-content: space-evenly;
-  }
+nav ul li {
+  padding-right: 1.7em;
+}
 
-  .site-buttons button {
-    width: 50%;
-    font-weight: 400;
-  }
+/* HERO */
 
-  .hero button.secondary {
-    margin: 1em;
-    border-radius: 25px;
-    text-align: center;
-    border: 1px solid white;
-    background-color: #14423f;
-    box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
-  }
+.hero-video {
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
 
-  .site-buttons .primary a {
-    color: #14423f;
-  }
+.hero-video video {
+  width: 100%;
+  z-index: -1;
+}
 
-  .hero .site-buttons .secondary a {
-    color: white;
-  }
+.hero h1 {
+  position: relative;
+  top: -9em;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  opacity: 90%;
+  z-index: 1;
+  margin: 0;
+  padding: 1.3em 0 3.5em .3em;
+}
 
-  button.primary {
-    background-color: #00ffbe;
-    margin: 1em;
-    border-radius: 25px;
-    text-align: center;
-    border: 1px solid #00ffbe;
-    box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
+.site-buttons a {
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: .6em;
+  text-decoration: none;
+}
 
-  }
+.hero .site-buttons {
+  position: relative;
+  top: -16.5em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.site-buttons button {
+  width: 50%;
+  font-weight: 400;
+}
+
+.hero button.secondary {
+  margin: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid white;
+  background-color: #14423f;
+  box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.site-buttons .primary a {
+  color: #14423f;
+}
+
+.hero .site-buttons .secondary a {
+  color: white;
+}
+
+button.primary {
+  background-color: #00ffbe;
+  margin: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #00ffbe;
+  box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
+
+}
 
 
 /* Performers */
@@ -145,19 +177,12 @@ h2 a {
   margin: -8.5em 0 1.5em 0;
 }
 
-h3 {
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding-left: 1.5em;
-  font-weight: 300;
-  text-align: left;
-}
-
 .performers {
   text-align: center;
 }
+
 .performers blockquote {
-  margin: 1em auto;
+  margin: 2em auto;
   position: relative;
 }
 
@@ -173,7 +198,8 @@ h3 {
   font-size: 2em;
   text-transform: uppercase;
   position: absolute;
-  bottom: -5px;;
+  bottom: -5px;
+  ;
   left: 60px;
   width: 40px;
   z-index 1;
@@ -181,7 +207,8 @@ h3 {
 }
 
 .performers button {
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; /* copied from https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  /* copied from https://getcssscan.com/css-box-shadow-examples */
   width: 50%;
 }
 
@@ -199,13 +226,17 @@ button.secondary {
   background-color: transparent;
 }
 
-.secondary a {
+.secondary a,
+.primary a {
   color: #14423f;
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 h2 {
   text-align: center;
-  padding: 2em 0;
+  padding: 4em 0 2em 0;
 }
 
 /* The Experience */
@@ -214,17 +245,12 @@ h2 {
   text-align: center;
 }
 
-.experience p {
-  font-family: 'Neue Montreal';
-  padding: 0 2em 0 2em;
-  text-align: left;
-  color: #14423f;
-}
-
 .experience img {
   width: 90%;
   border: 2px solid #ebf9fc;
   border-radius: 18px;
+  margin-top: 3em;
+  margin-bottom: 0;
 }
 
 .experience .primary {
@@ -233,15 +259,15 @@ h2 {
   border-radius: 25px;
   text-align: center;
   border: 1px solid #00ffbe;
-  box-shadow:  rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  margin: 1.5em 0 2em 0;
 }
 
 .experience button a {
   text-decoration: none;
   color: #14423f;
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 /* About */
-
