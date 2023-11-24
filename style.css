@@ -11,12 +11,11 @@ html {
   /* Typography */
 
   body {
-    max-width: 1170px;
-    font-size: 1.6rem;
-    font-family: 'NeueMontreal', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Figtree', sans-serif;
     margin: 0 auto;
   }
-
+  
   /* Header */
 
   header {
@@ -66,6 +65,7 @@ html {
 
   .hero h1 {
     font-size: 3rem;
+    font-weight: 500;
     color: white;
     opacity: 90%;
     z-index: 1;
@@ -73,36 +73,38 @@ html {
     padding: 1.3em 0 2.5em .3em;
   }
   
-  .hero-buttons a {
-    font-size: .9rem;
+  .site-buttons a {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
     text-transform: uppercase;
     margin: 0;
-    padding: 1em;
+    padding: .5em;
     text-decoration: none;
   }
 
-  .hero-buttons {
+  .site-buttons {
     display: flex;
     justify-content: space-evenly;
   }
 
-  .secondary {
-    background-color: white, 95%;
-    margin: 2em;
+  button.secondary {
+    margin: 1em;
     border-radius: 25px;
     text-align: center;
     border: 1px solid black;
+    background-color: white;
   }
 
   .secondary a {
-    color: #248a85;
-    box-shadow: #042a2b;
+    color: #042a2b;
     font-weight: 600;
   }
 
   .primary {
     background-color: #00ffbe;
-    margin: 2em;
+    margin: 1em;
     border-radius: 25px;
     text-align: center;
     border: 1px solid #00ffbe;
@@ -112,6 +114,63 @@ html {
     color: black;
     font-weight: 600;
   }
+
+
+/* Performers */
+
+h2 a {
+  color: #042a2b;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 1em;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  padding: 1em 0 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  padding-left: 1.5em;
+  font-weight: 300;
+  text-align: left;
+}
+
+.performers {
+  text-align: center;
+}
+.performers blockquote {
+  margin: 1em auto;
+  position: relative;
+}
+
+.performers img {
+  text-align: center;
+  width: 90%;
+  border-radius: 18px;
+  z-index: -1;
+}
+
+.performers h4 {
+  font-family: 'Neue Montreal';
+  font-size: 2em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: -5px;;
+  left: 60px;
+  width: 40px;
+  z-index 1;
+  color: #edf9f9;
+}
+
+.performers button {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px; /* copied from https://getcssscan.com/css-box-shadow-examples */
+  width: 50%;
+}
+
 
 
 
