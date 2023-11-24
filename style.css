@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    background-image: url(images/blue-gradient-unsplash.jpg);
 }
 
 
@@ -19,12 +20,12 @@ html {
   /* Header */
 
   header {
-    background-color: #042a2b;
+    background-color: #14423f;
     font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    padding: .4em 1em;
   }
 
   nav ul {
@@ -51,68 +52,72 @@ html {
   /* HERO */
 
   .hero-video {
-    position: relative;
     color: white;
     align-items: center;
     justify-content: center;
   }
 
   .hero-video video {
-    position: absolute;
-    min-width: 100%;
+    width: 100%;
     z-index: -1;
   }
 
   .hero h1 {
-    font-size: 3rem;
+    position: relative;
+    top: -8.2em;
+    font-size: 2.5rem;
     font-weight: 500;
     color: white;
     opacity: 90%;
     z-index: 1;
     margin: 0;
-    padding: 1.3em 0 2.5em .3em;
+    padding: 1.3em 0 3.5em .3em;
   }
   
   .site-buttons a {
     display: inline-block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: .8rem;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    padding: .5em;
+    padding: .6em;
     text-decoration: none;
   }
 
-  .site-buttons {
+  .hero .site-buttons {
+    position: relative;
+    top: -18em;
     display: flex;
     justify-content: space-evenly;
   }
 
-  button.secondary {
+  .site-buttons button {
+    width: 50%;
+    font-weight: 400;
+  }
+
+  .hero button.secondary {
     margin: 1em;
     border-radius: 25px;
     text-align: center;
-    border: 1px solid black;
-    background-color: white;
+    border: 1px solid white;
+    background-color: #14423f;;
   }
 
-  .secondary a {
-    color: #042a2b;
-    font-weight: 600;
+  .site-buttons .primary a {
+    color: #14423f;
   }
 
-  .primary {
+  .hero .site-buttons .secondary a {
+    color: white;
+  }
+
+  button.primary {
     background-color: #00ffbe;
     margin: 1em;
     border-radius: 25px;
     text-align: center;
     border: 1px solid #00ffbe;
-  }
-
-  .primary a {
-    color: black;
-    font-weight: 600;
   }
 
 
@@ -122,13 +127,17 @@ h2 a {
   color: #042a2b;
   text-decoration: none;
   font-size: 1.8rem;
-  padding: 1em;
-  font-weight: 400;
+  margin-top: 1em;
+  padding: .5em;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 25px;
 }
 
-h2 {
+.performers h2 {
   text-align: center;
   padding: 1em 0 1em 0;
+  margin: -8.5em 0 1.5em 0;
 }
 
 h3 {
@@ -171,7 +180,27 @@ h3 {
   width: 50%;
 }
 
+.performers .site-buttons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4em;
+}
 
+button.secondary {
+  margin: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #14423f;
+  background-color: transparent;
+}
+
+.secondary a {
+  color: #14423f;
+}
+
+h2 {
+  text-align: center;
+}
 
 
 
