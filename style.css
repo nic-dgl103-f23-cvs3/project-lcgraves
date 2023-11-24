@@ -261,10 +261,20 @@ h2 {
   font-size: 1.2rem;
 }
 
+/* About */
+
+.about {
+  margin-bottom: 3em;
+}
+
 /* Sign up */
 
+.sign-up {
+  background-color: #fdffff;
+}
+
 .sign-up h2, .territory-acknowledgement h2 {
-  margin: 5em auto 2em auto;
+  margin: 2.5em auto;
   padding:.5em;
   width: 80%;
   font-weight: 500;
@@ -272,6 +282,11 @@ h2 {
   border-radius: 25px;
   box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
 }
+
+.sign-up {
+  padding: 3em 0;
+}
+
 
 fieldset {
   padding: 1em;
@@ -304,3 +319,18 @@ input.submit {
   border: 1px solid #00ffbe;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   text-transform: uppercase;
+}
+
+/* Territorial Acknowledgement */
+
+.territory-acknowledgement h2 {
+  margin-top: 4em;
+}
+
+.territory-acknowledgement img {
+  width: 90%;
+  border: 2px solid #ebf9fc;
+  border-radius: 18px;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
