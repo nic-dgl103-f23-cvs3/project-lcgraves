@@ -401,3 +401,41 @@ footer p {
 /* on desktop - all content blocks should have a max-width of 1170 and margin right and left auto
 if there's a background - add an internal wrapper div all content in there and add the 1170 margin auto to the div, then add background color to the section  */
 
+@media only screen and (min-width: 1170px) {
+
+  /* Header */
+
+  .wrapper-div {
+    width: 1170px;
+    margin: 0 auto;
+  }
+  
+ .wrapper-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      background: none;
+      z-index: 0;
+      font-size: 1.2rem;
+      opacity: 100%;
+      width: unset;
+      height: unset;
+      position: unset;
+      padding: 0;
+      margin: 0;
+  }
+
+  nav ul li {
+    padding: 0 1.5em;
+  }
+
+  nav .toggle {
+      display: none;
+  }
+}
