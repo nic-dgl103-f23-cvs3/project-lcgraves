@@ -23,13 +23,17 @@ h2 {
   text-align: center;
   padding: 4em .5em 2em .5em;
   font-size: 1.8rem;
-  margin-top: 1em;
+  margin-top: 2em;
   font-weight: 500;
 }
 
 h2 a {
   color: #042a2b;
   text-decoration: none;
+  font-size: 1.8rem;
+  margin-top: 1em;
+  padding: .5em;
+  font-weight: 500;
   border: 1px solid black;
   border-radius: 25px;
   box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
@@ -159,18 +163,6 @@ button.primary {
 
 /* Performers */
 
-h2 a {
-  color: #042a2b;
-  text-decoration: none;
-  font-size: 1.8rem;
-  margin-top: 1em;
-  padding: .5em;
-  font-weight: 500;
-  border: 1px solid black;
-  border-radius: 25px;
-  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
-}
-
 .performers h2 {
   text-align: center;
   padding: 1em 0 1em 0;
@@ -235,7 +227,6 @@ button.secondary {
 }
 
 h2 {
-  text-align: center;
   padding: 4em 0 2em 0;
 }
 
@@ -270,4 +261,46 @@ h2 {
   font-size: 1.2rem;
 }
 
-/* About */
+/* Sign up */
+
+.sign-up h2, .territory-acknowledgement h2 {
+  margin: 5em auto 2em auto;
+  padding:.5em;
+  width: 80%;
+  font-weight: 500;
+  border: 1px solid #14423f;
+  border-radius: 25px;
+  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
+}
+
+fieldset {
+  padding: 1em;
+  margin: 0 auto 1.5em auto;
+  width: 95%;
+  text-align: left;
+  border: 1px solid #14423f;
+  border-radius: 18px;
+}
+
+input, label {
+  margin: .2em
+}
+
+input {
+  width: 10em;
+}
+
+.email {
+  width: 14em;
+  margin-top: 1em;
+}
+
+input.submit {
+  background-color: #00ffbe;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #00ffbe;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  text-transform: uppercase;
