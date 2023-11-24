@@ -7,8 +7,9 @@
     <title>Vancouver Island MusicFest Re-design</title>
     <!-- DGL 103 CVS3 - Lara Graves - Website Re-design -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--hamburger icon-->
-    <!--custom fonts-->
+    <!--hamburger icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--sourced code from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website-->
     <style media="screen, print">
         @font-face {
             font-family: "NeueMontreal";
@@ -21,14 +22,6 @@
             src: url(fonts/NeueMontreal-MediumItalic.otf) format("opentype");
             src: url(fonts/NeueMontreal-Regular.otf) format("opentype");
         }
-        @font-face {
-            font-family: "Carlos";
-            src: url(fonts/Fontspring-DEMO-carlos-bold.otf) format("opentype");
-            src: url(fonts/Fontspring-DEMO-carlos-light.otf) format("opentype");
-            src: url(fonts/Fontspring-DEMO-carlos-medium.otf) format("opentype");
-        }
-        
-        
     </style>
 </head>
 
@@ -72,16 +65,18 @@
     </header>
     <main>
         <section class="hero">
-            <h1>vancouver island MusicFest</h1>
-            <h2>July 12 - 14, 2024</h2>
-            <video autoplay="" loop="" muted="true" playsinline="" id="hero-video" width="100%">
-                <source src="video/hero-video-carlos.mp4" type="video/mp4"/>
-            </video>
-            <!--<web-component-embed id="OR8rNW" app_slug="countdown-timer"></web-component-embed>
-            <script src="https://app.powr.io/assets/webcomponent.js"></script>-->
-            <!-- designed free countdown timer on this site and copied code: https://www.powr.io/plugins/countdown-timer/standalone?id=OR8rNW&-->
-            <p>30 years of Fest Vibes!</p>
-            <a href="tickets.hmtl">Early bird tickets on sale Dec 1st!</a>
+            <!--code learned from: https://developer.mozilla.org/en-US/docs/Learn/Performance/video-->
+            <div class="hero-video">
+                <video autoplay="" loop="" muted="true" playsinline="" id="hero-video" width="100%">
+                    <source src="video/hero-video.mp4" type="video/mp4" />
+                </video>
+                <div class="hero-container">
+                    <h1>Vancouver Island</h1>
+                    <h2>July 12 - 14, 2024</h2>
+                    <p>30 years of Fest Vibes!</p>
+                    <a href="tickets.hmtl">Early bird tickets on sale Dec 1st!</a>
+                </div>
+            </div>
         </section>
         <section class="performers">
             <h2><a href="performers.html">2024 Performer's Schedule</a></h2>
@@ -173,6 +168,9 @@
         <a href="#"><img src="images/icons/youtube-white.png" width="5" alt="youtube icon"></a>
         <a href="https://www.islandmusicfest.com/privacy-policy/">Privacy Policy</a>
         <p>©2024 Vancouver Island MusicFest</p>
+        <p>Designed by Lara Graves - This is a fictional website that was designed and coded as an educational exercise.
+            It is not intended to be seen outside of the classroom environment. None of the content and images were
+            approved by the business owner.</p>
     </footer>
 
     <script>

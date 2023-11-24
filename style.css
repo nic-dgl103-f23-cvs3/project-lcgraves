@@ -1,26 +1,17 @@
 html {
     font-size: 62.5%;
-  }
-  
+}
+
+
   * {
     box-sizing: border-box;
   }
-  
-  /* sourced code from https://www.pagecloud.com/blog/how-to-add-custom-fonts-to-any-website */
 
-  @font-face {
-    font-family: "NeueMontreal";
-    src: local("NeueMontrea-Boldl"), url(fonts/NeueMontreal-Bold.otf) format("opentype");
-    src: url(fonts/NeueMontreal-BoldItalic.otf) format("opentype");
-    src: url(fonts/NeueMontreal-Italic.otf) format("opentype");
-    src: url(fonts/NeueMontreal-Light.otf) format("opentype");
-    src: url(fonts/NeueMontreal-LightItalic.otf) format("opentype");
-    src: url(fonts/NeueMontreal-Medium.otf) format("opentype");
-    src: url(fonts/NeueMontreal-MediumItalic.otf) format("opentype");
-    src: url(fonts/NeueMontreal-Regular.otf) format("opentype");
-  }
+
+  /* Typography */
 
   body {
+    max-width: 1170px;
     font-size: 1.6rem;
     font-family: 'NeueMontreal', Arial, sans-serif;
     margin: 0 auto;
@@ -29,11 +20,12 @@ html {
   /* Header */
 
   header {
-    background-color: rgb(20, 66, 63);
-    font-size: 1.1em;
+    background-color: #042a2b;
+    font-size: 1.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1em;
   }
 
   nav ul {
@@ -57,10 +49,29 @@ html {
     padding-right: 1.7em;
   }
 
-  .logo {
-    padding-left: 1em;
+  /* HERO */
+
+  .hero-video {
+    position: relative;
+    color: white;
+    align-items: center;
+    justify-content: center;
   }
 
-  .social-media {
-    padding-right: 1em;
+  .hero-video video {
+    position: absolute;
+    min-width: 100%;
+    z-index: -1;
   }
+
+  .hero h1 {
+    font-size: 3rem;
+    color: white;
+    z-index: 1;
+    margin: 0;
+    padding: 1em 0 2.5em .3em;
+  }
+
+
+
+
