@@ -32,7 +32,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Neue Montreal', sans-serif;
   margin: 2em .2em 1.5em .2em;
   font-weight: 300;
   font-size: 3.8rem;
@@ -47,7 +47,7 @@ h3 {
 }
 
 p {
-  font-family: 'Neue Montreal';
+  font-family: 'PT Serif', serif;
   margin: .3em auto 1.5em auto;
   padding: 0 1.5em;
   text-align: left;
@@ -327,12 +327,6 @@ input {
   justify-content: space-evenly;
 }
 
-.territory-acknowledgement h2 {
-  margin: 3.5em auto 1em auto;
-
-  font-size: 3rem;
-}
-
 .territory-acknowledgement img {
   width: 90%;
   border: 2px solid #ebf9fc;
@@ -400,7 +394,8 @@ if there's a background - add an internal wrapper div all content in there and a
   /* Typography */
 
   h2 {
-    font-size: 5rem;
+    font-size: 6rem;
+    font-weight: 300;
     margin-left: 0;
   }
 
@@ -472,14 +467,63 @@ margin-right: 4em;
 /* Performers */
 
 .performers {
-  margin: 7em auto 10em auto;
+  margin: 6em auto;
   max-width: 1170px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.performers h2 {
+  margin-top: 0;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+
+}
+.performers-info {
+  text-align: left;
+  width: 95%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: flex-start;
+}
+
+.performers-info p {
+padding: 0;
+width: 85%;
+margin-left: 0;
+font-size: 2.5rem;
+}
+
+.performers .site-buttons {
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  width: 85%;
+  place-self: center;
+  align-self: flex-start;
+}
+
+.watch-out {
+  text-transform: none;
+  font-size: 3.5rem;
+  font-weight: 600;
 }
 
 .performers-images { /* Fix image sizes - make all the same */
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 2em;
+  flex-direction: column;
+}
+
+.performers-title-images {
+  grid-column: 2 / 3;
+  grid-row: 2 / 4;
+  align-self: flex-start;
+}
+
+.performers-title-images h3 {
+  text-align: center;
+  margin-bottom: 0;
 }
 
 .performers img {
@@ -495,6 +539,10 @@ margin-right: 4em;
 
 .experience p {
   width: 50%;
+}
+
+.experience button {
+  width: 28em;
 }
 
 .experience-images {
