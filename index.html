@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -32,61 +36,68 @@
 
 <body>
     <header>
-        <div class="wrapper-div">
-        <a class="logo" href="index.html"><img src="images/vi-musicfest-logo.png" width="100"
-                alt="vancouver island musicfest logo"></a>
-        <nav>
-            <ul id="nav-items">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="performers.html">Performers</a>
-                </li>
-                <li>
-                    <a href="experience.html">The Experience</a>
-                </li>
-                <li>
-                    <a href="tickets.html">Tickets</a>
-                </li>
-                <li>
-                    <a href="volunteer.html">Volunteer</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
-            </ul>
-            <a class="toggle" onclick="showNav()"><i class="fa fa-bars" style="color: #ffffff;"></i></a>
-        </nav>
-        <div class="social-media">
-            <a href="https://www.instagram.com/vi.musicfest/"><img src="images/icons/instagram-white.png" width="35"
-                    alt="instragram icon"></a>
-            <a href="https://www.facebook.com/vimusicfest"><img src="images/icons/facebook-white.png" width="35"
-                    alt="facebook icon"></a>
-            <a href="#"><img src="images/icons/youtube-white.png" width="35" alt="youtube icon"></a>
+        <div class="wrapper-div flex-div">
+            <a class="logo" href="index.html"><img src="images/vi-musicfest-logo.png" width="100"
+                    alt="vancouver island musicfest logo"></a>
+            <nav>
+                <ul id="nav-items">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="performers.html">Performers</a>
+                    </li>
+                    <li>
+                        <a href="experience.html">The Experience</a>
+                    </li>
+                    <li>
+                        <a href="tickets.html">Tickets</a>
+                    </li>
+                    <li>
+                        <a href="volunteer.html">Volunteer</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a class="toggle" onclick="showNav()"><i class="fa fa-bars" style="color: #ffffff;"></i></a>
+            </nav>
+            <div class="social-media">
+                <a href="https://www.instagram.com/vi.musicfest/"><img src="images/icons/instagram-white.png" width="35"
+                        alt="instragram icon"></a>
+                <a href="https://www.facebook.com/vimusicfest"><img src="images/icons/facebook-white.png" width="35"
+                        alt="facebook icon"></a>
+                <a href="#"><img src="images/icons/youtube-white.png" width="35" alt="youtube icon"></a>
+            </div>
         </div>
-    </div>
     </header>
     <main>
-        <section class="hero">
-            <!--code learned from: https://developer.mozilla.org/en-US/docs/Learn/Performance/video-->
-            <div class="hero-video">
-                <video autoplay loop muted playsinline title="people dancing at outdoor festival" id="hero-video" width="100%">
+        <div class="hero-wrapper wrapper-div">
+            <section class="hero">
+                <!--code learned from: https://developer.mozilla.org/en-US/docs/Learn/Performance/video-->
+                <video class="background-video" autoplay loop muted playsinline
+                    title="people dancing at outdoor festival" id="hero-video" width="100%">
                     <source src="video/hero-video.mp4" type="video/mp4" />
                 </video>
-                <h1>Vancouver Island</h1>
-                <div class="site-buttons">
-                    <button class="secondary"><a href="performers.html">July 12 - 14 2024<br>30 years of
-                            MusicFest!</a></button>
-                    <button class="primary"><a href="tickets.hmtl">Early bird tickets<br>on sale Dec 1st!</a></button>
+                <div class="video-overlay">
+                    <h1>Vancouver Island</h1>
+                    <div class="site-buttons">
+                        <button class="secondary">
+                            <a href="performers.html">July 12 - 14 2024<br>30 years of MusicFest!</a>
+
+                        </button>
+                        <button class="primary">
+                            <a href="tickets.hmtl">Early bird tickets<br>on sale Dec 1st!</a>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
         <section class="performers">
-            <h2><a href="performers.html">2024 Performer's Schedule</a></h2>
+            <h2>2024 Performers</h2>
             <h3>This year's headliners</h3>
             <blockquote>
                 <img src="images/artists/artist-sarahmclachlan.jpeg" alt="artist sarah mclachlan" width="400">
@@ -108,7 +119,7 @@
             </div>
         </section>
         <section class="experience">
-            <h2><a href="experience.html">The Experience</a></h2>
+            <h2>The Experience</h2>
             <!-- *** most content rewritten and made more concise by chatGPT *** -->
             <p>Dive into the vibrant heart of music at the <strong>Vancouver Island MusicFest</strong> brought to you by
                 the Comox Valley Folk Society and a collective of 1,300 amazing volunteers. This unforgettable weekend
@@ -131,28 +142,29 @@
             <button class="primary"><a href="experience.html">Explore the full experience</a></button>
         </section>
         <section class="about">
-            <h2><a href="about.html">Comox Valley Folk Society</a></h2>
+            <h2>Comox Valley Folk Society</h2>
             <p>At our core, we celebrate diversity in our volunteers and performers, and are dedicated to an inclusive,
                 uplifting and eco-friendly vibe. Join the movement where positivity, music, culture, and environmental
                 consciousness converge!</p>
-            <button class="secondary"><a href="about.html">Learn more</a></button>
+            <button class="secondary site-buttons"><a href="about.html">Learn more</a></button>
         </section>
         <section class="sign-up">
-            <h2>Get the first look at 2024's lineup: <strong>Join our newsletter now</strong></h2>
-            <form action="#" method="post">
-                <fieldset>
-                    <label for="username">First</label>
-                    <input type="name" name="firstname">
-                    <label for="username">Last</label>
-                    <input type="name" name="lastname">
-                    <label for="email-address">Email</label>
-                    <input class="email" type="text" email="email-address" required>
-                </fieldset>
-                <input class="submit" type="submit" name="submit" value="Sign up">
-            </form>
+            <h2>Get the first look at 2024's lineup</h2>
+                    <form action="#" method="post">
+                        <h3>Sign up for our newsletter</h3>
+                        <fieldset>
+                            <label for="username">First</label>
+                            <input type="name" name="firstname">
+                            <label for="username">Last</label>
+                            <input type="name" name="lastname">
+                            <label for="email-address">Email</label>
+                            <input class="email" type="text" email="email-address" required>
+                        </fieldset>
+                        <input class="submit" type="submit" name="submit" value="Sign up">
+                    </form>
         </section>
         <section class="territory-acknowledgement">
-            <h2>Indigenous Territorial Acknowledgement</h2>
+            <h2>We acknowledge that we are on Indigenous land</h2>
             <p>The Vancouver Island Music Festival proudly honors the vibrant heritage of the Indigenous peoples whose
                 ancestral lands serve as the backdrop for our celebration of music, friendship, and community. We pay
                 homage to the Puntledge, E’iksan, and K’omoks peoples, whose enduring connection to this land resonates
@@ -164,12 +176,12 @@
     </main>
     <footer>
         <h4>Contact</h4>
-        <a href="mailto:tickets@islandmusicfest.com">Ticket <strong>Inquiry</strong></a>
-        <a href="mailto:mfestvolunteercoordinator@gmail.com">Volunteer <strong>Inquiry</strong></a>
-        <a href="mailto:woodcom@shaw.ca">Press & Media <strong>Inquiry</strong></a>
-        <a href="mailto:musicfestvendor@gmail.com">Vendor <strong>Inquiry</strong></a>
-        <a href="mailto:cresslynnislandmusicfest@gmail.com">Perfomer <strong>Inquiry</strong></a>
-        <a href="mailto:info@islandmusicfest.com"><strong>All other inquiries</strong></a>
+        <p>Ticket <a href="mailto:tickets@islandmusicfest.com">Inquiry</a></p>
+        <p>Volunteer <a href="mailto:mfestvolunteercoordinator@gmail.com">Volunteer</a></p>
+        <p>Press & Media <a href="mailto:woodcom@shaw.ca">Inquiry</a></p>
+        <p>Vendor <a href="mailto:musicfestvendor@gmail.com">Inquiry</a></p>
+        <p>Performer <a href="mailto:cresslynnislandmusicfest@gmail.com">Inquiry</a></p>
+        <a href="mailto:info@islandmusicfest.com">All other inquiries</a>
         <address>Mailing address | Box 3788, Courtenay, BC V9N 7P2</address>
         <div class="social-media">
             <a href="https://www.instagram.com/vi.musicfest/"><img src="images/icons/instagram-white.png" width="35"
@@ -178,9 +190,11 @@
                     alt="facebook icon"></a>
             <a href="#"><img src="images/icons/youtube-white.png" width="35" alt="youtube icon"></a>
         </div>
-        <a href="https://www.islandmusicfest.com/privacy-policy/">Privacy Policy</a>
-        <p>©2024 Vancouver Island MusicFest</p>
-        <p class="designed-by">Designed by Lara Graves - This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the classroom environment. None of the content and images were approved by the business owner.</p>
+        <div class="privacy-disclosure">
+            <p><a class="policy" href="https://www.islandmusicfest.com/privacy-policy/">Privacy Policy |</a> ©2024 Vancouver Island MusicFest</p>
+            <p>Designed by Lara Graves</p>
+            <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the classroom environment. None of the content and images were approved by the business owner.</p>
+        </div>
     </footer>
 
     <script>

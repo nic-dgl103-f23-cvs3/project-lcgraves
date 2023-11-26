@@ -14,59 +14,95 @@ html {
 /* Typography */
 
 body {
-  font-size: 1.3rem;
-  font-family: 'Figtree', sans-serif;
+  font-size: 1.4rem;
+  font-family: 'PT Serif', serif;
   color: #14423f;
   margin: 0 auto;
   text-align: center;
 }
 
-h2 {
-  text-align: center;
-  padding: 4em .5em 2em .5em;
-  font-size: 1.8rem;
-  margin-top: 2em;
-  font-weight: 500;
+header, h1, h3, footer {
+  font-family: 'Neue Montreal', sans-serif;
 }
 
-h2 a {
-  color: #042a2b;
-  text-decoration: none;
-  font-size: 1.8rem;
-  margin-top: 1em;
-  padding: .5em;
-  font-weight: 500;
-  border: 1px solid black;
-  border-radius: 25px;
-  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: 'PT Serif', serif;
+  font-size: 3rem;
+  margin: 2em .2em 1.5em .2em;
+  font-weight: 300;
+  font-size: 4rem;
 }
 
 h3 {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   padding-left: 1.5em;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 
 p {
-  margin: .5em auto 1.5em auto;
-  padding: 0 2em 0 2em;
+  font-family: 'Neue Montreal';
+  margin: .3em auto 1.5em auto;
+  padding: 0 1.5em;
   text-align: left;
   font-weight: 300;
 }
 
+/***** GLOBAL STYLES *****/
+
+/* Buttons! */
+
+
+.site-buttons a {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: .6em;
+  text-decoration: none;
+}
+
+.site-buttons button {
+  width: 20em;
+  font-weight: 400;
+}
+
+.site-buttons .primary a {
+  color: #14423f;
+  font-size: 1.3rem;
+}
+
+button.primary {
+  background-color: #00ffbe;
+  margin: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #00ffbe;
+  box-shadow: rgba(0, 255, 255, 0.55) 0px 5px 15px;
+}
+
+
 /* Header */
 
-header {
-  /* gradient copied and modified from https://cssgradient.io/ */
-  background: rgb(20, 66, 63);
-  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
+.flex-div {
   font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .4em 1em;
+}
+
+header {
+  /* gradient copied and modified from https://cssgradient.io/ */
+  background: rgb(20, 66, 63);
+  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
 }
 
 nav ul {
@@ -104,54 +140,34 @@ nav ul li {
 
 /* HERO */
 
-.hero-video {
-  color: white;
-  align-items: center;
-  justify-content: center;
+.background-video, .video-overlay {
+  background-image: url(video/word-mask.png);
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
-.hero-video video {
-  z-index: -1;
-  object-fit: cover;
-  position: absolute;
-  top: 3em;
-  left: 0;
+.video-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .hero h1 {
-  text-align: left;
-  position: relative;
-  font-size: 2.5rem;
-  font-weight: 500;
   color: white;
   opacity: 90%;
   z-index: 1;
-  margin: 0;
-  padding: 1.3em 0 3.5em .3em;
-}
-
-.site-buttons a {
-  display: inline-block;
-  font-size: 1rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 0;
-  padding: .6em;
-  text-decoration: none;
-}
-
-.hero .site-buttons {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.site-buttons button {
-  width: 50%;
-  font-weight: 400;
+  margin-top: 4em;
 }
 
 .hero button.secondary {
-  margin: 1em;
+  margin: 1em 1em 1.5em 1em;
   border-radius: 25px;
   text-align: center;
   border: 1px solid white;
@@ -159,35 +175,15 @@ nav ul li {
   box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
 }
 
-.site-buttons .primary a {
-  color: #14423f;
-}
-
 .hero .site-buttons .secondary a {
   color: white;
+  font-size: 1.3rem;
 }
-
-button.primary {
-  background-color: #00ffbe;
-  margin: 1em;
-  border-radius: 25px;
-  text-align: center;
-  border: 1px solid #00ffbe;
-  box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
-
-}
-
 
 /* Performers */
 
-.performers h2 {
-  text-align: center;
-  padding: 1em 0 1em 0;
-  margin: 4em 0 1.5em 0;
-}
-
 .performers {
-  text-align: center;
+  margin: 50em auto 8em auto;
 }
 
 .performers blockquote {
@@ -210,20 +206,19 @@ button.primary {
   bottom: -5px;
   left: 60px;
   width: 40px;
-  z-index 1;
+  z-index: 1;
   color: #edf9f9;
 }
 
 .performers button {
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   /* copied from https://getcssscan.com/css-box-shadow-examples */
-  width: 50%;
 }
 
 .performers .site-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 1em;
+  padding: .5em 0;
 }
 
 button.secondary {
@@ -237,16 +232,12 @@ button.secondary {
 .secondary a,
 .primary a {
   color: #14423f;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   text-transform: uppercase;
 }
 
 /* The Experience */
-
-.experience {
-  text-align: center;
-}
 
 .experience img {
   width: 90%;
@@ -254,6 +245,10 @@ button.secondary {
   border-radius: 18px;
   margin-top: 2em;
   margin-bottom: 0;
+}
+
+.experience-music {
+  margin-top: 6em;
 }
 
 .experience .primary {
@@ -273,6 +268,10 @@ button.secondary {
   font-size: 1.2rem;
 }
 
+.experience p {
+  padding-bottom: 1em;
+}
+
 /* About */
 
 .about {
@@ -283,119 +282,122 @@ button.secondary {
 
 .sign-up {
   background-color: #fdffff;
+  padding: 2em 0 6em 0;;
 }
 
-.sign-up h2,
-.territory-acknowledgement h2 {
-  margin: 2.5em auto;
-  padding: .5em;
-  width: 80%;
-  font-weight: 500;
-  border: 1px solid #14423f;
-  border-radius: 25px;
-  box-shadow: rgba(5, 101, 173, 0.4) 0px 10px 36px 0px, rgba(5, 101, 173, 0.4) 0px 0px 0px 1px;
+.sign-up h3 {
+  margin: 2em auto;
+  padding-left: 0;
 }
 
-.sign-up {
-  padding: 3em 0;
-}
-
-
-fieldset {
+form {
   padding: 1em;
-  margin: 0 auto 1.5em auto;
-  width: 95%;
+  margin: 2em auto 1.5em auto;
+  width: 85%;
   text-align: left;
   border: 1px solid #14423f;
   border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  border: none;
 }
 
 input,
 label {
-  margin: .2em
+  margin: .2em;
 }
 
 input {
-  width: 10em;
+  width: 15em;
+  display: block;
+  margin-bottom: 1em;
 }
 
-.email {
-  width: 14em;
-  margin-top: 1em;
-}
-
-input.submit {
+.submit {
   background-color: #00ffbe;
-  margin: 1em;
+  margin: 1.5em auto;
   padding: 1em;
   border-radius: 25px;
-  text-align: center;
+  display: block;
   border: 1px solid #00ffbe;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   text-transform: uppercase;
 }
 
 /* Territorial Acknowledgement */
+.territory-acknowledgement {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 
 .territory-acknowledgement h2 {
-  margin-top: 4em;
+  margin: 3.5em auto 1em auto;
+
+  font-size: 3rem;
 }
 
 .territory-acknowledgement img {
   width: 90%;
   border: 2px solid #ebf9fc;
   border-radius: 18px;
-  margin: 3em auto;
+  margin: 2em auto;
 
 }
 
 /* Footer */
 
 footer {
-  padding: 3em auto;
-  margin: 0 auto;
   background: rgb(20, 66, 63);
   background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
   color: white;
-  font-size: 1.2em;
 }
 
 footer h4 {
-  padding-top: 3em;
+  padding: 4em 0 1em 0;
   font-family: 'Neue Montreal';
   text-transform: uppercase;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
-footer a {
-  display: block;
-  text-decoration: none;
+footer a, footer p {
   color: white;
   font-weight: 300;
-  margin: .2em auto;
+}
+
+footer p {
+  margin: .5em auto;
+  text-align: center;
 }
 
 address {
-  margin: 1.5em;
+  margin: 3em auto;
   font-style: normal;
   font-size: 1.2rem;
+  font-weight: 300;
 }
 
 footer .social-media {
-  margin: 1em 5em;
+  margin: 2em 5em;
   display: flex;
   justify-content: center;
 }
 
-footer p {
-  font-size: 1.2rem;
-  text-align: center;
+.privacy-disclosure {
+  font-size: 1.1rem;
+  margin: 0 auto;
+  padding-bottom: .5em;
+  border-top: .5px solid white;
 }
 
-.designed-by {
-  padding-bottom: 5em;
-  margin: 0 auto;
+.privacy-disclosure p {
+  margin: 1em auto;
+  text-align: left;
 }
 
 /* on desktop - all content blocks should have a max-width of 1170 and margin right and left auto
@@ -410,9 +412,9 @@ if there's a background - add an internal wrapper div all content in there and a
     margin: 0 auto;
   }
   
- .wrapper-div {
+ .video-overlay {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly
     align-items: center; 
   }
 
@@ -438,4 +440,47 @@ if there's a background - add an internal wrapper div all content in there and a
   nav .toggle {
       display: none;
   }
+
+/* HERO */
+
+.hero h1 {
+  font-size: 7.5em;
+}
+
+.site-buttons button {
+  width: 18em;
+}
+
+.hero button.secondary {
+margin-right: 4em;
+}
+
+.hero-wrapper {
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.background-video .video-overlay {
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.video-overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweenl;
+  height: 100vh;
+}
+
+
+
+
+
 }
