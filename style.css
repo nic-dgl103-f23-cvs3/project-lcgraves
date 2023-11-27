@@ -280,6 +280,7 @@ button.secondary {
 .about img {
   margin-top: 2em;
   border-radius: 25px;
+  width: 80%;
 }
 
 /* Sign up */
@@ -591,17 +592,16 @@ margin-right: 4em;
 
 /* Sign up form */
 
+.sign-up h2 {
+  margin: 1em auto;
+}
+.sign-up {
+  max-width: 1170px;
+  margin: 0 auto;
+}
 
 form {
-  padding: 1em;
-  margin: 3em auto;
   width: 50%;
-  text-align: left;
-  border: 1px solid #14423f;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 fieldset {
@@ -612,6 +612,7 @@ fieldset {
   margin: 3em auto;
   width: 15em;
   padding: .3em auto;
+  font-size: 1.5rem;
 }
 
 label {
@@ -620,7 +621,7 @@ label {
 
 input,
 label {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-family: 'Neue Montreal', sans-serif;
 }
 
