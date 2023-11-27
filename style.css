@@ -1,6 +1,7 @@
 html {
   font-size: 62.5%;
-  background-image: url(images/blue-gradient-unsplash.jpg);
+  background-image: ;
+  background-size: contain;
 
 }
 
@@ -41,7 +42,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-size: 1.8rem;
-  padding-left: 1.5em;
+  padding-left: 1.4em;
   font-weight: 400;
   text-align: left;
 }
@@ -49,7 +50,7 @@ h3 {
 p {
   font-family: 'PT Serif', serif;
   margin: .3em auto 1.5em auto;
-  padding: 0 1.5em;
+  padding: 0 2em;
   text-align: left;
   font-weight: 300;
 }
@@ -218,9 +219,11 @@ nav ul li {
 }
 
 .performers .site-buttons {
-  display: flex;
-  justify-content: center;
   padding: .5em 0;
+}
+
+button.secondary, button.primary {
+  width: 15em;
 }
 
 button.secondary {
@@ -258,16 +261,25 @@ button.secondary {
   border: 1px solid #00ffbe;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
   margin: 1.5em 0 2em 0;
+  width: 20em;
 }
 
 .experience p {
   padding-bottom: 1em;
 }
 
+.experience figure {
+  margin: 0;
+}
+
 /* About */
 
 .about {
   margin-bottom: 3em;
+}
+
+.about img {
+  margin-top: 2em;
 }
 
 /* Sign up */
@@ -338,8 +350,7 @@ input {
 /* Footer */
 
 footer {
-  background: rgb(20, 66, 63);
-  background: linear-gradient(0deg, rgba(20, 66, 63, 1) 35%, rgb(24, 137, 129) 100%);
+  background: #14423f;
   color: white;
 }
 
@@ -354,6 +365,7 @@ footer h4 {
 footer a, footer p {
   color: white;
   font-weight: 300;
+  font-family: 'Neue Montreal', sans-serif;
 }
 
 footer p {
@@ -405,13 +417,17 @@ if there's a background - add an internal wrapper div all content in there and a
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 
   /* Global */
 
   .hero .site-buttons .secondary a, .primary a, .secondary a {
-    font-size: 1.7rem;
+    font-size: 2rem;
+  }
+
+  button.secondary, button.primary {
+    width: 25em;
   }
 
   /* Header */
@@ -451,8 +467,8 @@ if there's a background - add an internal wrapper div all content in there and a
   margin-top: 0;
 }
 
-hero .site-buttons button {
-  width: 25em;
+.hero .site-buttons button {
+  width: 28em;
 }
 
 .hero button.secondary {
@@ -534,15 +550,15 @@ font-size: 2.5rem;
 
 .experience {
   max-width: 1170px;
-  margin: 0 auto;
+  margin: 0 auto 5em auto;
 }
 
 .experience p {
-  width: 50%;
+  width: 55%;
 }
 
-.experience button {
-  width: 28em;
+.experience button.primary {
+  width: 32em;
 }
 
 .experience-images {
@@ -551,7 +567,7 @@ font-size: 2.5rem;
 }
 
 .experience img {
-  margin: 0;
+  margin: 0 0 1em 0;
   padding: 0;
 }
 
@@ -563,8 +579,41 @@ font-size: 2.5rem;
 .experience-images p {
   width: 100%;
   margin: 0;
-
+  padding: 0 .8em;
+  font-size: 2.2rem;
 }
+
+/* About */
+
+.about {
+  display: flex;
+  padding-top: 10em;
+  margin: 3em auto;
+  max-width: 1170px;
+}
+
+.about h2 {
+  margin-top: 0;
+}
+
+
+.about-info {
+  text-align: left;
+}
+
+.about img {
+  width: 40%;
+}
+
+.about p {
+  width: 65%;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+
+
+
+
 }
 
 
