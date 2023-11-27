@@ -333,11 +333,6 @@ input {
 }
 
 /* Territorial Acknowledgement */
-.territory-acknowledgement {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
 
 .territory-acknowledgement img {
   width: 90%;
@@ -603,6 +598,7 @@ font-size: 2.5rem;
 
 .about img {
   width: 40%;
+  align-self: center;
 }
 
 .about p {
@@ -611,8 +607,34 @@ font-size: 2.5rem;
   padding: 0;
 }
 
+/* Territory Acknowledgement */
 
+.territory-acknowledgement {
+  max-width: 1170px;
+  margin: 10em auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
+.territory-acknowledgement h2 {
+margin: 0 0 1em 0;
+text-align: left;
+}
+
+.territory-acknowledgement p {
+  padding: 0;
+  margin: 0;
+}
+
+.territory-acknowledgement :nth-child(1) {
+  width: 90%;
+}
+
+.territory-acknowledgement :nth-child(2) {
+  width: 90%;
+  align-self: center;
+}
 
 }
 
