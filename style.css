@@ -1,8 +1,5 @@
 html {
   font-size: 62.5%;
-  background-image: ;
-  background-size: contain;
-
 }
 
 
@@ -678,5 +675,37 @@ footer address {
   font-size: 1.4rem;
 }
 }
+
+
+
+/* PERFORMERS PAGE */
+
+.p-hero {
+  background-image: url(images/performers-hero.jpg);
+  background-position: -16em 0;
+  background-size: 250%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.p-hero h1 {
+  margin-top: 0;
+  padding-top: 1.5em;
+  text-align: left;
+  padding-left: 3.5em;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.p-hero p {
+  padding: 0 0 0 8em;
+  font-size: 1.3em;
+}
+
+.p-hero button {
+  margin-left: 9em;
+  margin-bottom: 4.5em;
+}
+
 
 
