@@ -686,6 +686,8 @@ footer address {
 
 /* PERFORMERS PAGE */
 
+
+
 .p-hero {
   background-image: url(images/performers-hero.jpg);
   background-position: -16em 0;
@@ -713,7 +715,34 @@ footer address {
   margin-bottom: 4.5em;
 }
 
+/* Experience Page */
 
+.e-hero {
+  background-image: url(images/experience-hero.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  padding: 10em 0;
+  background-position: -5em 0;
+  
+}
+
+.e-hero h1 {
+  padding: 3em auto;
+  margin: 0 auto;
+  font-size: 3em;
+  font-weight: 800;
+  width: 50%;
+}
+
+.e-hero p {
+  text-align: left;
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+  padding-top: 1em;
+}
 
 
 
