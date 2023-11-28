@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-header, h1, h3, footer {
+header, h1, h3, h4, footer {
   font-family: 'Neue Montreal', sans-serif;
 }
 
@@ -31,17 +31,25 @@ h1 {
 
 h2 {
   font-family: 'Neue Montreal', sans-serif;
-  margin: 2em .2em 1.5em .2em;
+  margin: 2em .2em 1em .2em;
   font-weight: 300;
   font-size: 3.8rem;
 }
 
 h3 {
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  padding-left: 1.4em;
+  font-size: 2.5rem;
+  padding-left: 1.2em;
   font-weight: 400;
   text-align: left;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 300;
+  text-align: left;
+  padding-left: 1.3em;
+  margin-bottom: 0;
 }
 
 p {
@@ -185,6 +193,9 @@ nav ul li {
 .performers {
   margin: 50em auto 8em auto;
 }
+.performers-info p {
+  margin-bottom: 4em;
+}
 
 .performers figure {
   margin: 1.5em 0;
@@ -195,18 +206,6 @@ nav ul li {
   text-align: center;
   width: 88%;
   border-radius: 18px;
-}
-
-.performers h4 {
-  font-family: 'Neue Montreal';
-  font-size: 2em;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: -5px;
-  left: 60px;
-  width: 40px;
-  z-index: 1;
-  color: #edf9f9;
 }
 
 .performers button {
@@ -277,7 +276,7 @@ button.secondary {
 .about img {
   margin-top: 2em;
   border-radius: 25px;
-  width: 80%;
+  width: 60%;
 }
 
 /* Sign up */
@@ -353,6 +352,7 @@ footer h4 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 2em;
+  text-align: center;
 }
 
 footer a, footer p {
@@ -402,6 +402,7 @@ if there's a background - add an internal wrapper div all content in there and a
     font-size: 6rem;
     font-weight: 300;
     margin-left: 0;
+    margin-bottom: 0.75em;
   }
 
   h3 {
@@ -410,17 +411,17 @@ if there's a background - add an internal wrapper div all content in there and a
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   /* Global */
 
   .hero .site-buttons .secondary a, .primary a, .secondary a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   button.secondary, button.primary {
-    width: 25em;
+    width: 20em;
   }
 
   /* Header */
@@ -482,17 +483,21 @@ margin-right: 4em;
 
 .performers-info {
   margin: 0 auto;
-  width: 70%;
+  width: 55%;
 }
 
 .performers-info p {
-  padding: 2em 0;
+  padding: 2em 0 3em 0;
 }
 
 .performers h3 {
   text-align: center;
-  width: 80%;
-  margin: 0 auto;
+  width: 55%;
+  margin: 0 auto .5em auto;
+}
+
+.performers h4 {
+  margin-bottom: 0;
 }
 
 .performers .site-buttons {
@@ -510,6 +515,7 @@ margin-right: 4em;
 
 .performers-images-1 {
   display: flex;
+
 }
 
 .performers-images-2 {
@@ -533,7 +539,8 @@ margin-right: 4em;
 }
 
 .experience button.primary {
-  width: 32em;
+  width: 25em;
+  margin-bottom: 3em;
 }
 
 .experience-images {
@@ -554,8 +561,7 @@ margin-right: 4em;
 .experience-images p {
   width: 100%;
   margin: 0;
-  padding: 0 .8em;
-  font-size: 2.2rem;
+  padding: 0 1.4em;
 }
 
 /* About */
@@ -664,11 +670,11 @@ text-align: left;
 /* Footer */
 
 footer a {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 footer address {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .privacy-disclosure p, .privacy-disclosure a {
@@ -690,22 +696,24 @@ footer address {
 
 .p-hero h1 {
   margin-top: 0;
-  padding-top: 1.5em;
+  padding: 1.5em 1em 0 3.2em;
   text-align: left;
-  padding-left: 3.5em;
   font-size: 3em;
   font-weight: 600;
 }
 
 .p-hero p {
-  padding: 0 0 0 8em;
-  font-size: 1.3em;
+  font-family: 'Neue Montreal', sans-serif;
+  padding: 0 1em 0 8.2em;
+  font-size: 1.2em;
 }
 
 .p-hero button {
   margin-left: 9em;
   margin-bottom: 4.5em;
 }
+
+
 
 
 
