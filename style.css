@@ -19,7 +19,7 @@ body {
   text-align: center;
 }
 
-header, h1, h3, h4, footer {
+header, h1, h2, h3, h4, footer {
   font-family: 'Neue Montreal', sans-serif;
 }
 
@@ -30,7 +30,6 @@ h1 {
 }
 
 h2 {
-  font-family: 'Neue Montreal', sans-serif;
   margin: 2em .2em 1em .2em;
   font-weight: 300;
   font-size: 3.8rem;
@@ -708,6 +707,7 @@ footer address {
   font-family: 'Neue Montreal', sans-serif;
   padding: 0 1em 0 8.2em;
   font-size: 1.2em;
+  font-weight: 400;
 }
 
 .p-hero button {
