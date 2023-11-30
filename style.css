@@ -30,21 +30,21 @@ h1 {
 }
 
 h2 {
-  margin: 2em .2em 1em .2em;
+  margin: 1.5em .5em 1em .5em;
   font-weight: 300;
   font-size: 3.8rem;
 }
 
 h3 {
   font-size: 2.5rem;
-  padding-left: 1.2em;
+  padding: 0 .5em;
   font-weight: 400;
   text-align: left;
 }
 
 h4 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 300;
   text-align: left;
   padding-left: 1.3em;
@@ -54,7 +54,7 @@ h4 {
 p {
   font-family: 'PT Serif', serif;
   margin: .3em auto 1.5em auto;
-  padding: 0 2em;
+  padding: 0 1em;
   text-align: left;
   font-weight: 300;
 }
@@ -145,6 +145,7 @@ nav ul li {
   margin: 1.5em 0;
 }
 
+/********** HOMEPAGE ***********/
 /* HERO */
 
 .background-video, .video-overlay {
@@ -190,8 +191,10 @@ nav ul li {
 /* Performers */
 
 .performers {
-  margin: 50em auto 8em auto;
+  margin: 50em 1em 2em 1em;
+  border-bottom: #408b86 solid 1px;
 }
+
 .performers-info p {
   margin-bottom: 4em;
 }
@@ -203,7 +206,7 @@ nav ul li {
 
 .performers img {
   text-align: center;
-  width: 88%;
+  width: 92%;
   border-radius: 18px;
 }
 
@@ -220,6 +223,10 @@ button.secondary, button.primary {
   width: 15em;
 }
 
+button.primary {
+  margin-bottom: 2em;
+}
+
 button.secondary {
   margin: 1em;
   border-radius: 25px;
@@ -228,11 +235,14 @@ button.secondary {
   background-color: transparent;
 }
 
+
+
 /* The Experience */
 
 .experience {
+  margin: auto 1em;
   border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-bottom: #408b86 solid 1px;
 }
 
 .experience img {
@@ -269,7 +279,9 @@ button.secondary {
 /* About */
 
 .about {
-  margin-bottom: 3em;
+  margin: 0 1em;
+  padding-bottom: 2em;
+  border-bottom: #408b86 solid 1px;
 }
 
 .about img {
@@ -282,10 +294,12 @@ button.secondary {
 
 .sign-up {
   background-color: #fdffff;
-  padding: 2em 0 6em 0;;
+  padding: .5em 0 6em 0;
+  margin: 0 1em;
+  border-bottom: #408b86 solid 1px;
 }
 
-.sign-up h3 {
+.sign-up h4 {
   margin: 2em auto;
   padding-left: 0;
 }
@@ -389,6 +403,118 @@ footer .social-media {
   margin: 1em auto;
   text-align: left;
 }
+
+/*********** PERFORMERS PAGE ************/
+
+/* HERO */
+
+.p-hero {
+  background-image: url(images/performers-hero.jpg);
+  background-position: -16em 0;
+  background-size: 280%;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  color: white;
+  
+}
+
+.p-hero h1 {
+  margin-top: 0;
+  padding: 2em 1em 0 3.2em;
+  text-align: left;
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.p-hero p {
+  font-family: 'Neue Montreal', sans-serif;
+  padding: 0 1em 0 8.2em;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.p-hero button {
+  margin-left: 9em;
+  margin-bottom: 4.5em;
+}
+
+/* Intro & Spotify section */
+
+.spotify {
+  margin: 0 2em;
+}
+
+.spotify h2 {
+  margin: 1.5em 0 1em 0;
+}
+
+.spotify h3 {
+  padding: 1em 0 0 0;
+  text-align: center;
+}
+.spotify h4 {
+  padding-bottom: .6em;
+}
+
+.spotify iframe {
+  width: 90%;
+}
+
+.spotify p {
+  border-bottom: #408b86 solid 1px;
+  padding: 0 0 1em 0;
+}
+
+/* Schedule of lineup */
+
+.schedule {
+  margin: 0 1em;
+}
+
+table {
+  padding-bottom: 2em;
+}
+
+table caption {
+  padding-bottom: 1.5em;
+  font-size: 2em;
+}
+
+
+
+
+/********* Experience Page ***********/
+
+.e-hero {
+  background-image: url(images/experience-hero.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  padding: 10em 0;
+  background-position: -5em 0;
+  
+}
+
+.e-hero h1 {
+  padding: 3em auto;
+  margin: 0 auto;
+  font-size: 3em;
+  font-weight: 800;
+  width: 50%;
+}
+
+.e-hero p {
+  text-align: left;
+  font-family: 'Neue Montreal', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 60%;
+  text-align: center;
+  padding-top: 1em;
+}
+
+
 
 /* on desktop - all content blocks should have a max-width of 1170 and margin right and left auto
 if there's a background - add an internal wrapper div all content in there and add the 1170 margin auto to the div, then add background color to the section  */
@@ -682,67 +808,6 @@ footer address {
 }
 
 
-
-/* PERFORMERS PAGE */
-
-
-
-.p-hero {
-  background-image: url(images/performers-hero.jpg);
-  background-position: -16em 0;
-  background-size: 250%;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-.p-hero h1 {
-  margin-top: 0;
-  padding: 1.5em 1em 0 3.2em;
-  text-align: left;
-  font-size: 3em;
-  font-weight: 600;
-}
-
-.p-hero p {
-  font-family: 'Neue Montreal', sans-serif;
-  padding: 0 1em 0 8.2em;
-  font-size: 1.2em;
-  font-weight: 400;
-}
-
-.p-hero button {
-  margin-left: 9em;
-  margin-bottom: 4.5em;
-}
-
-/* Experience Page */
-
-.e-hero {
-  background-image: url(images/experience-hero.jpg);
-  background-size: cover;
-  background-repeat: no repeat;
-  padding: 10em 0;
-  background-position: -5em 0;
-  
-}
-
-.e-hero h1 {
-  padding: 3em auto;
-  margin: 0 auto;
-  font-size: 3em;
-  font-weight: 800;
-  width: 50%;
-}
-
-.e-hero p {
-  text-align: left;
-  font-family: 'Neue Montreal', sans-serif;
-  font-size: 1.2em;
-  font-weight: 600;
-  width: 60%;
-  text-align: center;
-  padding-top: 1em;
-}
 
 
 
