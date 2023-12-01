@@ -302,7 +302,6 @@ button.secondary {
 .about {
   margin: 0 1em;
   padding-bottom: 2em;
-  border-bottom: #408b86 solid 1px;
 }
 
 .about img {
@@ -314,10 +313,12 @@ button.secondary {
 /* Sign up */
 
 .sign-up {
-  background-color: #fdffff;
+  background-image: url(images/signup-bg.jpg);
+  background-size: cover;
   padding: .5em 0 6em 0;
   margin: 0 1em;
   border-bottom: #408b86 solid 1px;
+  border-top: #408b86 solid 1px;
 }
 
 .sign-up h4 {
@@ -326,6 +327,7 @@ button.secondary {
 }
 
 form {
+  background-color: rgba(255, 255, 255, 0.5);
   padding: 1em;
   margin: 2em auto 1.5em auto;
   width: 85%;
@@ -525,13 +527,13 @@ table caption {
 
 table th {
   font-size: 1.2em;
-  font-weight: 400;
+  font-weight: 500;
   color: #0A2E46;
   padding: .5em 0;
 }
 
 tr, td, th, table {
-  border: black solid 1px;
+  border: #0A2E46 solid 1px;
 }
 
 tr, td, th {
