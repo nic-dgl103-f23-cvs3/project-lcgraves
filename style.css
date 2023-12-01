@@ -607,7 +607,7 @@ tr, td, th {
 /********* Experience Page ***********/
 
 .e-hero {
-  padding: 5em 1em;
+  padding: 4em 1em;
   background-image: url(images/experience-hero.jpg);
   background-position: -30em;
   background-size: 350%;
@@ -619,6 +619,7 @@ tr, td, th {
 }
 
 .e-hero h1 {
+  transform: rotate(-12deg);
   padding: 0;
   margin: 0 auto;
   text-align: center;
@@ -631,17 +632,19 @@ tr, td, th {
   margin: 0 auto;
   font-family: 'Neue Montreal', sans-serif;
   font-size: 1.6em;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   padding: 2em 0 0 0;
+  width: 80%;
 }
 
 .e-hero .bg-gradient {
-  background: linear-gradient(0deg, rgba(219 246 237 / 50%) 33%, rgba(11 60 43/50%) 89%);
+  background: linear-gradient(0deg, rgba(11 60 43 / 50%) 28%, rgba(186 225 219 /60%) 100%); /*created with css.gradient.io and adjusted opacity*/
   margin: 0 auto;
   padding: 2em;
   width: 80%;
-  border-radius: 18px;
+  border-radius: 50%;
+  transform: rotate(-12deg);
 }
 
 
