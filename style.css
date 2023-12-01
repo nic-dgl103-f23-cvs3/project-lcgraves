@@ -344,11 +344,16 @@ input {
 
 /* Territorial Acknowledgement */
 
-.territory-acknowledgement img {
+.territory-acknowledgement p {
   width: 90%;
+}
+
+.territory-acknowledgement img {
+  width: 80%;
   border: 2px solid #ebf9fc;
   border-radius: 18px;
   margin: 2em auto;
+  border: #D3FF05 solid 3px;
 
 }
 
@@ -420,6 +425,7 @@ footer .social-media {
 }
 
 .p-hero h1 {
+  transform: rotate(-12deg);
   margin-top: 0;
   padding: 2em 1em 0 3.2em;
   text-align: left;
@@ -507,6 +513,10 @@ tr, td, th, table {
   border: black solid 1px;
 }
 
+tr, td, th {
+  height: 2.5em;
+}
+
 /* Call to action */
 
 .cta {
@@ -577,18 +587,20 @@ tr, td, th, table {
 
 .cta button.primary {
   padding: 1em;
-}
+  }
+
 
 
 /********* Experience Page ***********/
 
 .e-hero {
   background-image: url(images/experience-hero.jpg);
-  background-size: cover;
+  background-position: -30em;
+  background-size: 350%;
   background-repeat: no repeat;
-  padding: 10em 0;
-  background-position: -5em 0;
-  
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .e-hero h1 {
@@ -787,6 +799,7 @@ margin-right: 4em;
 
 .about {
   display: flex;
+  justify-content: center;
   padding-top: 2em;
   margin: 3em auto;
   max-width: 1170px;
@@ -799,15 +812,16 @@ margin-right: 4em;
 
 .about-info {
   text-align: left;
+  width: 50%;
 }
 
 .about img {
-  width: 35%;
+  width: 25%;
   margin-top: 0;
 }
 
 .about p {
-  width: 65%;
+  width: 55%;
   margin: 0 0 3em 0;
   padding: 0;
 }
@@ -839,7 +853,7 @@ fieldset {
 }
 
 label {
-  margin-bottom: .8em;
+  margin-bottom: .5em;
 }
 
 input,
@@ -868,23 +882,27 @@ input {
 margin: 0 0 1em 0;
 text-align: left;
 }
-
 .territory-acknowledgement p {
-  padding: 0;
-  margin: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+.territory-info {
+  margin-left: 2em;
 }
 
 .territory-acknowledgement :nth-child(1) {
-  width: 100%;
+  order: 2;
+  width: 80%;
 }
 
 .territory-acknowledgement :nth-child(2) {
-  width: 85%;
-  align-self: center;
+  order: 1;
+  width: 80%;
 }
 
-.territory-acknowledgement img {
+.territory-image img {
   margin-top: 0;
+
 }
 
 /* Footer */
@@ -1003,6 +1021,7 @@ footer address {
 }
 
 .cta h4 {
+  margin-bottom: 2em;
   text-align: center;
 }
 
@@ -1010,10 +1029,6 @@ footer address {
   margin: 1em auto 2em auto;
   display: flex;
   flex-wrap: wrap;
-}
-
-.cta button.primary {
-  transform: translate(-18em);
 }
 
 .cta ul :nth-child(1) {
