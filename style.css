@@ -138,6 +138,10 @@ nav ul {
   flex-direction: column;
 }
 
+.toggle {
+  font-size: 2em;
+}
+
 nav a {
   text-decoration: none;
   color: white;
@@ -155,6 +159,7 @@ nav ul li {
   background-image: url(video/word-mask.png);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -499,6 +504,7 @@ footer .social-media {
 }
 
 table {
+  background-size: cover;
   margin: 0 auto;
   width: 95%;
   font-family: 'Neue Montreal', sans-serif;
@@ -506,8 +512,9 @@ table {
   border-spacing: 0 0;
   empty-cells: hide;
   color: #0A2E46;
-  background: rgb(71,252,252);
-  background: radial-gradient(circle, rgba(71,252,252,1) 0%, rgba(219,228,65,1) 100%); /* created with css.gradient.io */
+  background-image: url(images/2023-schedule.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 table caption {
@@ -520,8 +527,6 @@ table th {
   font-size: 1.2em;
   font-weight: 400;
   color: #0A2E46;
-  background: rgb(180,237,255);
-  background: radial-gradient(circle, rgba(180,237,255,1) 76%, rgba(68,153,212,1) 100%);
   padding: .5em 0;
 }
 
