@@ -442,7 +442,9 @@ footer .social-media {
 /* Intro & Spotify section */
 
 .spotify {
-  margin: 0 2em;
+  margin: 1em 2em;
+  padding-bottom: 2em;
+  border-bottom: #408b86 solid 1px;
 }
 
 .spotify h2 {
@@ -469,11 +471,14 @@ footer .social-media {
 /* Schedule of lineup */
 
 .schedule {
-  margin: 0 1em;
+  margin: 2em 1em;
+  padding-bottom: 2em;
+  border-bottom: #408b86 solid 1px;
 }
 
 table {
   margin: 0 auto;
+  width: 95%;
   font-family: 'Neue Montreal', sans-serif;
   border-collapse:separate;
   border-spacing: 0 0;
@@ -485,7 +490,8 @@ table {
 
 table caption {
   padding-bottom: 1.5em;
-  font-size: 2em;
+  font-size: 2.5rem;
+  color: #14423f;
 }
 
 table th {
@@ -501,9 +507,39 @@ tr, td, th, table {
   border: black solid 1px;
 }
 
+/* Call to action */
+
+.cta {
+  margin: 4em 1em;
+}
+
+.cta h2 { 
+  font-size: 3.5rem;
+  margin: 1em 0;
+}
 
 
+.cta h3 {
+  text-align: center;
+}
 
+.cta ul {
+  padding-left: 0;
+  margin-bottom: 3em;
+}
+.cta ul li {
+  font-family: 'Neue Montreal', sans-serif;
+  background-color: #A3E7FC;
+  padding: 1em;
+  margin: 1em auto;
+  border-radius: 25px;
+  list-style-type: none;
+  font-weight: 500;
+}
+
+.cta button.primary {
+  padding: 1em;
+}
 
 
 /********* Experience Page ***********/
