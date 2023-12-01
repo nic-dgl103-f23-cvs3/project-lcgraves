@@ -32,7 +32,7 @@ h1 {
 h2 {
   margin: 1.5em .5em 1em .5em;
   font-weight: 300;
-  font-size: 3.8rem;
+  font-size: 3.5rem;
 }
 
 h3 {
@@ -148,7 +148,7 @@ nav ul li {
 /********** HOMEPAGE ***********/
 /* HERO */
 
-.background-video, .video-overlay {
+.video-overlay {
   background-image: url(video/word-mask.png);
   background-position: center;
   background-size: cover;
@@ -158,6 +158,19 @@ nav ul li {
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -1;
+}
+
+.background-video {
+  background-image: url(video/word-mask.png);
+  background-position: center;
+  background-size: cover;
+  background-size: 40%;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: -2.5em;
   z-index: -1;
 }
 
@@ -247,7 +260,7 @@ button.secondary {
 
 .experience img {
   width: 90%;
-  border: 2px solid #ebf9fc;
+  border: 2.5px solid #87AF18;
   border-radius: 18px;
   margin-top: 2em;
   margin-bottom: 0;
