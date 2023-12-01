@@ -606,6 +606,8 @@ tr, td, th {
 
 /********* Experience Page ***********/
 
+/* HERO */
+
 .e-hero {
   padding: 4em 1em;
   background-image: url(images/experience-hero.jpg);
@@ -646,6 +648,16 @@ tr, td, th {
   border-radius: 50%;
   transform: rotate(-12deg);
 }
+
+/** Stages **/
+
+.stages {
+  margin: 1em;
+}
+
+
+
+
 
 
 
