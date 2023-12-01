@@ -518,8 +518,13 @@ tr, td, th, table {
   margin: 1em 0;
 }
 
+.cta p {
+  padding-bottom: 3em;
+}
 
-.cta h3 {
+
+.cta h4 {
+  font-size: 2em;
   text-align: center;
 }
 
@@ -529,12 +534,45 @@ tr, td, th, table {
 }
 .cta ul li {
   font-family: 'Neue Montreal', sans-serif;
-  background-color: #A3E7FC;
-  padding: 1em;
-  margin: 1em auto;
+  font-size: 1.6rem;;
+  padding: .6em;
+  margin: 1.5em auto;
   border-radius: 25px;
   list-style-type: none;
   font-weight: 500;
+}
+
+.cta ul :nth-child(1) {
+  background-color: #A3E7FC;
+  transform: rotate(-5deg);
+}
+
+.cta ul :nth-child(2) {
+  background-color: #D3FF05;
+  transform: skew(-15deg, 15deg);
+}
+
+.cta ul :nth-child(3) {
+  background-color: #84BF17;
+  transform: rotateZ(-6deg);
+}
+
+.cta ul :nth-child(4) {
+  background-color: #47FCFC;
+  transform: skewY(-15deg);
+}
+
+.cta ul :nth-child(5) {
+  background-color: #7BE0D2;
+  transform: translate(20px, 20%);
+  transform: rotate(5deg);
+  transform: skewX(20deg)
+}
+
+.cta ul :nth-child(6) {
+  background-color: #D3FF05;
+  transform: scale(1.3, 1.3);
+  transform: rotate(10deg)
 }
 
 .cta button.primary {
@@ -581,10 +619,9 @@ if there's a background - add an internal wrapper div all content in there and a
   /* Typography */
 
   h2 {
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 300;
-    margin-left: 0;
-    margin-bottom: 0.75em;
+    margin: 2em auto .75em 0;
   }
 
   h3 {
@@ -653,13 +690,13 @@ margin-right: 4em;
 
 .hero-wrapper {
   margin: 0 auto;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Performers */
 
 .performers {
-  margin: 6em auto;
+  margin: 2em auto;
   max-width: 1170px;
 }
 
@@ -750,7 +787,7 @@ margin-right: 4em;
 
 .about {
   display: flex;
-  padding-top: 10em;
+  padding-top: 2em;
   margin: 3em auto;
   max-width: 1170px;
 }
@@ -783,6 +820,7 @@ margin-right: 4em;
 .sign-up {
   max-width: 1170px;
   margin: 0 auto;
+  padding-bottom: 1em;
 }
 
 form {
@@ -821,7 +859,7 @@ input {
 
 .territory-acknowledgement {
   max-width: 1170px;
-  margin: 10em auto;
+  margin: 5em auto 1em auto;
   display: flex;
   justify-content: space-between;
 }
@@ -862,6 +900,129 @@ footer address {
 .privacy-disclosure p, .privacy-disclosure a {
   font-size: 1.4rem;
 }
+
+/******** Performers Page ***********/
+
+/* Hero */
+
+.p-hero {
+  background: top left / cover no-repeat url(images/performers-hero.jpg);
+  background-size: 100%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.p-wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 31em;
+  padding-bottom: 8em;
+  text-align: left;
+  color: white;
+  width: 60%
+}
+
+.p-hero h1 {
+  margin-top: 0;
+  padding: 1.5em 0 0 0;
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.p-hero p {
+  padding: 0;
+  font-size: 2em;
+}
+
+.p-hero button.primary {
+  margin-left: 0;
+  display: block;
+}
+
+/* Info & Spotify */
+
+.spotify {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.spotify-info {
+  width: 45%;
+}
+
+.spotify-music {
+  width: 45%;
+  padding-top: 5em;
+}
+
+.spotify p {
+  border-bottom: none;
+}
+
+.spotify h2 {
+  margin: 2em auto 1em auto;
+}
+
+.spotify h3 {
+  text-align: left;
+}
+
+/* Schedule */
+
+.schedule {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.schedule table {
+  width: 50%;
+}
+
+/**CTA**/
+
+.cta {
+  max-width: 1170px;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta-para {
+  width: 35%;
+}
+
+.stand-out {
+  width: 60%;
+}
+
+}
+.cta h2 {
+  margin-top: 2em;
+}
+
+.cta h4 {
+  text-align: center;
+}
+
+.cta ul {
+  margin: 1em auto 2em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cta button.primary {
+  transform: translate(-18em);
+}
+
+.cta ul :nth-child(1) {
+  background-color: #A3E7FC;
+  transform: rotate(5deg);
+}
+
+
+
 }
 
 
