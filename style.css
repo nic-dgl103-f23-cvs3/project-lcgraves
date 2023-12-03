@@ -3,9 +3,9 @@ html {
 }
 
 
-* {
+*, *:after, *:before {
   box-sizing: border-box;
-  transition: all .2s ease-in-out; /* check out bezier curve transition-timing-function */
+  transition: all .3s ease-in-out;
 }
 
 
@@ -19,7 +19,12 @@ body {
   text-align: center;
 }
 
-header, h1, h2, h3, h4, footer {
+header,
+h1,
+h2,
+h3,
+h4,
+footer {
   font-family: 'Neue Montreal', sans-serif;
 }
 
@@ -95,14 +100,31 @@ button.primary {
   box-shadow: rgba(0, 255, 255, 0.55) 0px 5px 15px;
 }
 
-/* transitions */
+/* Links & transitions */
+
+/** copied and adapted from Ian Lunn's github repo for css hover effects: https://github.com/IanLunn/Hover/blob/master/css/hover.css **/
+.link-grow {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+  transition-property: transform;
+  cursor: pointer;
+}
+
+.link-grow:hover,
+.link-grow:focus,
+.link-grow:active {
+  transform: scale(1.3) rotate(-15deg);
+}
 
 
+/** NAV **/
 
 /* Header */
 
 .flex-div {
-  font-size: 1.2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -127,7 +149,7 @@ nav ul {
   z-index: 2;
   position: absolute;
   top: -1em;
-  left:0;
+  left: 0;
   font-size: 1.6rem;
   text-transform: uppercase;
   padding-top: 3em;
@@ -240,7 +262,8 @@ nav ul li {
   padding: .5em 0;
 }
 
-button.secondary, button.primary {
+button.secondary,
+button.primary {
   width: 15em;
 }
 
@@ -268,7 +291,7 @@ button.secondary {
 
 .experience img {
   width: 90%;
-  border: 2.5px solid #87AF18;
+  /*border: 2.5px solid #87AF18;*/
   border-radius: 18px;
   margin-top: 2em;
   margin-bottom: 0;
@@ -357,7 +380,7 @@ input {
 .submit {
   background-color: #00ffbe;
   margin: 1.5em auto;
-  padding: 1em;
+  padding: 1em .5em 1em .5em;
   border-radius: 25px;
   display: block;
   border: 1px solid #00ffbe;
@@ -396,7 +419,8 @@ footer h4 {
   text-align: center;
 }
 
-footer a, footer p {
+footer a,
+footer p {
   color: white;
   font-weight: 300;
   font-family: 'Neue Montreal', sans-serif;
@@ -484,6 +508,7 @@ footer .social-media {
   padding: 1em 0 0 0;
   text-align: center;
 }
+
 .spotify h4 {
   padding-bottom: .6em;
 }
@@ -510,7 +535,7 @@ table {
   margin: 0 auto;
   width: 95%;
   font-family: 'Neue Montreal', sans-serif;
-  border-collapse:separate;
+  border-collapse: separate;
   border-spacing: 0 0;
   empty-cells: hide;
   color: #0A2E46;
@@ -532,11 +557,16 @@ table th {
   padding: .5em 0;
 }
 
-tr, td, th, table {
+tr,
+td,
+th,
+table {
   border: #0A2E46 solid 1px;
 }
 
-tr, td, th {
+tr,
+td,
+th {
   height: 2.5em;
 }
 
@@ -546,7 +576,7 @@ tr, td, th {
   margin: 4em 1em;
 }
 
-.cta h2 { 
+.cta h2 {
   font-size: 3.5rem;
   margin: 1em 0;
 }
@@ -565,9 +595,11 @@ tr, td, th {
   padding-left: 0;
   margin-bottom: 3em;
 }
+
 .cta ul li {
   font-family: 'Neue Montreal', sans-serif;
-  font-size: 1.6rem;;
+  font-size: 1.6rem;
+  ;
   padding: .6em;
   margin: 1.5em auto;
   border-radius: 25px;
@@ -610,7 +642,7 @@ tr, td, th {
 
 .cta button.primary {
   padding: 1em;
-  }
+}
 
 
 
@@ -651,7 +683,8 @@ tr, td, th {
 }
 
 .e-hero .bg-gradient {
-  background: linear-gradient(0deg, rgba(11 60 43 / 50%) 28%, rgba(186 225 219 /60%) 100%); /*created with css.gradient.io and adjusted opacity*/
+  background: linear-gradient(0deg, rgba(11 60 43 / 50%) 28%, rgba(186 225 219 /60%) 100%);
+  /*created with css.gradient.io and adjusted opacity*/
   margin: 0 auto;
   padding: 2em;
   width: 80%;
@@ -695,11 +728,14 @@ if there's a background - add an internal wrapper div all content in there and a
 
   /* Global */
 
-  .hero .site-buttons .secondary a, .primary a, .secondary a {
+  .hero .site-buttons .secondary a,
+  .primary a,
+  .secondary a {
     font-size: 1.5rem;
   }
 
-  button.secondary, button.primary {
+  button.secondary,
+  button.primary {
     width: 20em;
   }
 
@@ -711,18 +747,18 @@ if there's a background - add an internal wrapper div all content in there and a
   }
 
   nav ul {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      background: none;
-      z-index: 0;
-      font-size: 1.2rem;
-      opacity: 100%;
-      width: unset;
-      height: unset;
-      position: unset;
-      padding: 0;
-      margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background: none;
+    z-index: 0;
+    font-size: 1.3rem;
+    opacity: 100%;
+    width: unset;
+    height: unset;
+    position: unset;
+    padding: 0;
+    margin: 0;
   }
 
   nav ul li {
@@ -730,340 +766,345 @@ if there's a background - add an internal wrapper div all content in there and a
   }
 
   nav .toggle {
-      display: none;
+    display: none;
   }
 
-/* HERO */
+  /* HERO */
 
-.hero h1 {
-  font-size: 8em;
-  margin-top: 0;
+  .hero h1 {
+    font-size: 8em;
+    margin-top: 0;
+  }
+
+  .hero .site-buttons button {
+    width: 28em;
+  }
+
+  .hero button.secondary {
+    margin-right: 4em;
+  }
+
+  .hero-wrapper {
+    margin: 0 auto;
+    height: 90vh;
+  }
+
+  /* Performers */
+
+  .performers {
+    margin: 2em auto;
+    max-width: 1170px;
+  }
+
+  .performers-info {
+    margin: 0 auto;
+    width: 55%;
+  }
+
+  .performers-info p {
+    padding: 2em 0 3em 0;
+  }
+
+  .performers h3 {
+    text-align: center;
+    width: 55%;
+    margin: 0 auto .5em auto;
+  }
+
+  .performers h4 {
+    margin-bottom: 0;
+  }
+
+  .performers .site-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .watch-out {
+    text-transform: none;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+
+  .performers-images-1 {
+    display: flex;
+
+  }
+
+  .performers-images-2 {
+    display: flex;
+    margin-bottom: 4em;
+  }
+
+  .performers img {
+    width: 95%;
+  }
+
+  /* The Experience */
+
+  .experience {
+    max-width: 1170px;
+    margin: 0 auto 5em auto;
+  }
+
+  .experience p {
+    width: 55%;
+  }
+
+  .experience button.primary {
+    width: 25em;
+    margin-bottom: 3em;
+  }
+
+  .experience-images {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .experience img {
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+
+  .experience figure {
+    width: 33%;
+    margin: 4em 0;
+  }
+
+  .experience-images p {
+    width: 100%;
+    margin: 0;
+    padding: 0 1.4em;
+  }
+
+  /* About */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+    margin: 3em auto;
+    max-width: 1170px;
+  }
+
+  .about h2 {
+    margin-top: 0;
+  }
+
+
+  .about-info {
+    text-align: left;
+    width: 50%;
+  }
+
+  .about img {
+    width: 25%;
+    margin-top: 0;
+  }
+
+  .about p {
+    width: 55%;
+    margin: 0 0 3em 0;
+    padding: 0;
+  }
+
+  /* Sign up form */
+
+  .sign-up h2 {
+    margin: 1em auto;
+  }
+
+  .sign-up {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-bottom: 1em;
+  }
+
+  form {
+    width: 50%;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  .submit {
+    margin: 3em auto;
+    width: 15em;
+    padding: .3em auto;
+    font-size: 1.5rem;
+  }
+
+  label {
+    margin-bottom: .5em;
+  }
+
+  input,
+  label {
+    font-size: 1.5rem;
+    font-family: 'Neue Montreal', sans-serif;
+  }
+
+  input {
+    width: 20em;
+    display: block;
+    padding: .5em 0;
+    margin-bottom: 1em;
+  }
+
+  /* Territory Acknowledgement */
+
+  .territory-acknowledgement {
+    max-width: 1170px;
+    margin: 5em auto 1em auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .territory-acknowledgement h2 {
+    margin: 0 0 1em 0;
+    text-align: left;
+  }
+
+  .territory-acknowledgement p {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .territory-info {
+    margin-left: 2em;
+  }
+
+  .territory-acknowledgement :nth-child(1) {
+    order: 2;
+    width: 80%;
+  }
+
+  .territory-acknowledgement :nth-child(2) {
+    order: 1;
+    width: 80%;
+  }
+
+  .territory-image img {
+    margin-top: 0;
+
+  }
+
+  /* Footer */
+
+  footer a {
+    font-size: 1.6rem;
+  }
+
+  footer address {
+    font-size: 1.5rem;
+  }
+
+  .privacy-disclosure p,
+  .privacy-disclosure a {
+    font-size: 1.4rem;
+  }
+
+  /******** Performers Page ***********/
+
+  /* Hero */
+
+  .p-hero {
+    background: top left / cover no-repeat url(images/performers-hero.jpg);
+    background-size: 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .p-wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 31em;
+    padding-bottom: 8em;
+    text-align: left;
+    color: white;
+    width: 60%
+  }
+
+  .p-hero h1 {
+    margin-top: 0;
+    padding: 1.5em 0 0 0;
+    font-size: 5em;
+    font-weight: 600;
+  }
+
+  .p-hero p {
+    padding: 0;
+    font-size: 2em;
+  }
+
+  .p-hero button.primary {
+    margin-left: 0;
+    display: block;
+  }
+
+  /* Info & Spotify */
+
+  .spotify {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .spotify-info {
+    width: 45%;
+  }
+
+  .spotify-music {
+    width: 45%;
+    padding-top: 5em;
+  }
+
+  .spotify p {
+    border-bottom: none;
+  }
+
+  .spotify h2 {
+    margin: 2em auto 1em auto;
+  }
+
+  .spotify h3 {
+    text-align: left;
+  }
+
+  /* Schedule */
+
+  .schedule {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .schedule table {
+    width: 50%;
+  }
+
+  /**CTA**/
+
+  .cta {
+    max-width: 1170px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cta-para {
+    width: 35%;
+  }
+
+  .stand-out {
+    width: 60%;
+  }
+
 }
 
-.hero .site-buttons button {
-  width: 28em;
-}
-
-.hero button.secondary {
-margin-right: 4em;
-}
-
-.hero-wrapper {
-  margin: 0 auto;
-  height: 90vh;
-}
-
-/* Performers */
-
-.performers {
-  margin: 2em auto;
-  max-width: 1170px;
-}
-
-.performers-info {
-  margin: 0 auto;
-  width: 55%;
-}
-
-.performers-info p {
-  padding: 2em 0 3em 0;
-}
-
-.performers h3 {
-  text-align: center;
-  width: 55%;
-  margin: 0 auto .5em auto;
-}
-
-.performers h4 {
-  margin-bottom: 0;
-}
-
-.performers .site-buttons {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-.watch-out {
-  text-transform: none;
-  font-size: 3.5rem;
-  font-weight: 600;
-}
-
-.performers-images-1 {
-  display: flex;
-
-}
-
-.performers-images-2 {
-  display: flex;
-  margin-bottom: 4em;
-}
-
-.performers img {
-  width: 95%;
-}
-
-/* The Experience */
-
-.experience {
-  max-width: 1170px;
-  margin: 0 auto 5em auto;
-}
-
-.experience p {
-  width: 55%;
-}
-
-.experience button.primary {
-  width: 25em;
-  margin-bottom: 3em;
-}
-
-.experience-images {
-  display: flex;
-  justify-content: space-between;
-}
-
-.experience img {
-  margin: 0 0 1em 0;
-  padding: 0;
-}
-
-.experience figure {
-  width: 33%;
-  margin: 4em 0;
-}
-
-.experience-images p {
-  width: 100%;
-  margin: 0;
-  padding: 0 1.4em;
-}
-
-/* About */
-
-.about {
-  display: flex;
-  justify-content: center;
-  padding-top: 2em;
-  margin: 3em auto;
-  max-width: 1170px;
-}
-
-.about h2 {
-  margin-top: 0;
-}
-
-
-.about-info {
-  text-align: left;
-  width: 50%;
-}
-
-.about img {
-  width: 25%;
-  margin-top: 0;
-}
-
-.about p {
-  width: 55%;
-  margin: 0 0 3em 0;
-  padding: 0;
-}
-
-/* Sign up form */
-
-.sign-up h2 {
-  margin: 1em auto;
-}
-.sign-up {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-bottom: 1em;
-}
-
-form {
-  width: 50%;
-}
-
-fieldset {
-  border: none;
-}
-
-.submit {
-  margin: 3em auto;
-  width: 15em;
-  padding: .3em auto;
-  font-size: 1.5rem;
-}
-
-label {
-  margin-bottom: .5em;
-}
-
-input,
-label {
-  font-size: 1.5rem;
-  font-family: 'Neue Montreal', sans-serif;
-}
-
-input {
-  width: 20em;
-  display: block;
-  padding: .5em 0;
-  margin-bottom: 1em;
-}
-
-/* Territory Acknowledgement */
-
-.territory-acknowledgement {
-  max-width: 1170px;
-  margin: 5em auto 1em auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.territory-acknowledgement h2 {
-margin: 0 0 1em 0;
-text-align: left;
-}
-.territory-acknowledgement p {
-  margin-left: 0;
-  padding-left: 0;
-}
-.territory-info {
-  margin-left: 2em;
-}
-
-.territory-acknowledgement :nth-child(1) {
-  order: 2;
-  width: 80%;
-}
-
-.territory-acknowledgement :nth-child(2) {
-  order: 1;
-  width: 80%;
-}
-
-.territory-image img {
-  margin-top: 0;
-
-}
-
-/* Footer */
-
-footer a {
-  font-size: 1.6rem;
-}
-
-footer address {
-  font-size: 1.5rem;
-}
-
-.privacy-disclosure p, .privacy-disclosure a {
-  font-size: 1.4rem;
-}
-
-/******** Performers Page ***********/
-
-/* Hero */
-
-.p-hero {
-  background: top left / cover no-repeat url(images/performers-hero.jpg);
-  background-size: 100%;
-  width: 100vw;
-  height: 100vh;
-}
-
-.p-wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding-left: 31em;
-  padding-bottom: 8em;
-  text-align: left;
-  color: white;
-  width: 60%
-}
-
-.p-hero h1 {
-  margin-top: 0;
-  padding: 1.5em 0 0 0;
-  font-size: 5em;
-  font-weight: 600;
-}
-
-.p-hero p {
-  padding: 0;
-  font-size: 2em;
-}
-
-.p-hero button.primary {
-  margin-left: 0;
-  display: block;
-}
-
-/* Info & Spotify */
-
-.spotify {
-  display: flex;
-  justify-content: space-between;
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.spotify-info {
-  width: 45%;
-}
-
-.spotify-music {
-  width: 45%;
-  padding-top: 5em;
-}
-
-.spotify p {
-  border-bottom: none;
-}
-
-.spotify h2 {
-  margin: 2em auto 1em auto;
-}
-
-.spotify h3 {
-  text-align: left;
-}
-
-/* Schedule */
-
-.schedule {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-.schedule table {
-  width: 50%;
-}
-
-/**CTA**/
-
-.cta {
-  max-width: 1170px;
-  margin: 2em auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.cta-para {
-  width: 35%;
-}
-
-.stand-out {
-  width: 60%;
-}
-
-}
 .cta h2 {
   margin-top: 2em;
 }
@@ -1087,8 +1128,3 @@ footer address {
 
 
 }
-
-
-
-
-
