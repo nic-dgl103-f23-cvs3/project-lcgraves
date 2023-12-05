@@ -129,7 +129,7 @@ button.primary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: .4em 1em;
+  padding: .2em 1em;
 }
 
 header {
@@ -179,38 +179,38 @@ nav ul li {
 /* HERO */
 
 .video-overlay {
-  margin: 0;
-  background-image: url(video/word-mask-carlos.png);
-  background-position: center -5em;
-  background-repeat: no-repeat;
+  margin: 1;
+  background-image: url(video/mask-mobile1.png);
   background-size: cover;
-  width: 100vw;
+  background-position: center;
   height: 100vh;
-  z-index: 1;
+  z-index: 2;
 }
 
 .background-video {
+  background-color:#14423f;
   margin: 0 auto;
   position: absolute;
+  top: -5em;
   left: 0;
   right: 0;
-  top: -3em;
-  z-index: -1;
   width: 100vw;
   height: 100vh;
+  z-index: -1;
+
 }
 
 .video-overlay {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .hero h1 {
   color: white;
   opacity: 90%;
-  z-index: 1;
-  margin-top: .6em;
+  z-index: 3;
+  margin-top: 1.5em;
 }
 
 .hero button.secondary {
@@ -797,7 +797,6 @@ if there's a background - add an internal wrapper div all content in there and a
     flex-direction: row;
     flex-wrap: nowrap;
     background: none;
-    z-index: 0;
     font-size: 1.3rem;
     opacity: 100%;
     width: unset;
@@ -820,8 +819,8 @@ if there's a background - add an internal wrapper div all content in there and a
   /* HERO */
 
   .hero h1 {
-    font-size: 8em;
-    margin-top: 0;
+    font-size: 7em;
+    margin: -.1em auto 3em auto;
   }
 
   .hero .site-buttons button {
@@ -835,20 +834,18 @@ if there's a background - add an internal wrapper div all content in there and a
   .hero {
     margin: 0 auto;
     height: 100vh;
+    width: 100vw;
   }
 
   .background-video {
-    margin: 0 auto;
-    position: absolute;
-    left: 0;
-    right: 0;
     top: -3em;
-    z-index: -1;
+    width: 100vw;
+    height: 100vh;
   }
 
   .video-overlay {
-    background-position: center;
-    background-size: 130%;
+    background-image: url(video/mask-desktop.png);
+    justify-content: space-around;
   }
 
   /* Performers */
