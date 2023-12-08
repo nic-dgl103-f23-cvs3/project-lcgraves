@@ -564,18 +564,18 @@ th {
 .cta {
   padding: 4em 1em 4em 1em;
   position: relative;
-  background-color:#2d6e75;
+  /*background-color:#2d6e75;*/
   margin: 0 auto;
-  background-image: url(images/cta/confetti-green.svg);
-  background-size: cover;
+  /*background-image: url(images/cta/confetti-green.svg);
+  background-size: cover;*/
   overflow: hidden
 }
 
 .star {
   position: absolute;
-  top: -11em;
-  right: -5em;
-  animation: 3s ease-in-out 1s infinite alternate spin;
+  top: -6em;
+  right: -12em;
+  animation: 2.5s linear 1s infinite alternate spin;
 }
 
 /* learned the from - to syntax from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
@@ -584,7 +584,7 @@ th {
     transform: rotate(0turn);
   }
   to {
-    transform: rotate(1turn);
+    transform: rotate(.5turn);
   }
 }
 
@@ -604,6 +604,7 @@ th {
   display: flex;
   align-items: center;
 }
+
 .cta h2 {
   font-size: 3.5rem;
   margin: 1em 0;
@@ -611,6 +612,7 @@ th {
 
 .stand-out p {
   font-family: 'Neue Montreal', sans-serif;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -624,16 +626,19 @@ th {
 
 
 .cta h4 {
-  font-size: 1.4em;
+  font-size: 2.5rem;
   text-align: center;
   text-transform: initial;
-  font-weight: 400;
+  font-weight: 500;
   text-align: left;
-  margin-top: 0;
+  margin: 0 auto auto 1em;
+  background-image: url(images/yellow-squiggle.png);
+  background-size: contain;
+  padding: 0 0 .4em 0;
 }
 
 .cta ul {
-  padding: 0 0 0 1em;
+  padding: 0;
 }
 
 .cta ul li {
@@ -649,8 +654,10 @@ th {
 }
 
 .cta ul li p {
-  margin: 0 0 0 1em;
+  margin: 0 0 0 2em;
   padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
 }
 
 .cta button.primary {
