@@ -127,7 +127,7 @@ button.primary {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1em 0 1em;
+  padding: 0.5em 1em 0.25em 1em;
 }
 
 header {
@@ -460,12 +460,28 @@ footer .social-media {
   object-fit: cover;
   background-repeat: no-repeat;
   color: white;
+  padding-left: 9em;
+}
+
+.p-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  width: 95%;
+  border-radius: 16px;
+}
+
+.add-bg {
+  padding: 1em;
+  background-color: rgba(5, 44, 40, 0.5);
+  border-radius: 16px;
 }
 
 .p-hero h1 {
   transform: rotate(-12deg);
   margin-top: 0;
-  padding: 2em 1em 0 3.2em;
   text-align: left;
   font-size: 3em;
   font-weight: 600;
@@ -473,13 +489,8 @@ footer .social-media {
 
 .p-hero p {
   font-family: 'Neue Montreal', sans-serif;
-  padding: 0 1em 0 8.2em;
   font-size: 1.2em;
   font-weight: 400;
-}
-
-.p-hero button {
-  margin-left: 9em;
 }
 
 /* Intro & Spotify section */
@@ -564,10 +575,7 @@ th {
 .cta {
   padding: 4em 1em 4em 1em;
   position: relative;
-  /*background-color:#2d6e75;*/
   margin: 0 auto;
-  /*background-image: url(images/cta/confetti-green.svg);
-  background-size: cover;*/
   overflow: hidden
 }
 
@@ -594,7 +602,7 @@ th {
   background-color: #dffdff;
   border: #d7f9fc solid 2px;
   position: relative;
-  margin: auto auto 3em auto;
+  margin: 0 auto;
   width: 90%;
   border-radius: 16px;
 }
@@ -610,20 +618,24 @@ th {
   margin: 1em 0;
 }
 
+.stand-out {
+  background-image: url(images/cta/two-stars.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: -1.5em 2em;
+  border: white solid 2px;
+  background-color: white;
+  margin: 0 auto;
+  padding-top: 5em;
+  width: 90%;
+  border-radius: 16px;
+}
+
 .stand-out p {
   font-family: 'Neue Montreal', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
 }
-
-.stand-out {
-  border: white solid 2px;
-  background-color: white;
-  margin: 0 auto;
-  width: 90%;
-  border-radius: 16px;
-}
-
 
 .cta h4 {
   font-size: 2.5rem;
@@ -631,9 +643,10 @@ th {
   text-transform: initial;
   font-weight: 500;
   text-align: left;
-  margin: 0 auto auto 1em;
-  background-image: url(images/yellow-squiggle.png);
-  background-size: contain;
+  margin: 0 auto 0 1em;
+  background-image: url(images/yellow-squiggle.svg);
+  background-size: 100%;
+  background-position: center -1.1em;
   padding: 0 0 .4em 0;
 }
 
