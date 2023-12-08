@@ -741,6 +741,16 @@ th {
   margin: 1em;
 }
 
+figure {
+  margin: 3em 1em;
+}
+
+figcaption {
+  font-size: 2.5rem;
+  padding: 0 .5em;
+  font-weight: 400;
+}
+
 /** Audience Info **/
 
 .accordion-container {
@@ -759,11 +769,9 @@ th {
   transition: all .3s ease-in-out;
   list-style: none;
 }
-
-.accordion-container summary:hover,
-.accordion-container summary:active,
-accordion-container summary:after,
-details[open] summary {
+ summary:hover,
+details[open] summary
+details[open] {
   background-color: rgba(0, 255, 255, 0.35)
 }
 
@@ -773,6 +781,7 @@ details summary::after {
   display: inline-block;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .accordion-container .hosts {
@@ -800,6 +809,10 @@ details[open] summary .fa-arrow-down {
   border-right: 1px solid #408b86;
   border-left: 1px solid #408b86;
   border-bottom: 1px solid #408b86;
+}
+.accordion ul {
+  margin-top: 0;
+  padding: 1em 1em 1em 2em;
 }
 
 @media only screen and (min-width: 1170px) {
