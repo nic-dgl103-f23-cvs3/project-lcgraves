@@ -402,6 +402,7 @@ footer {
 
 footer h4 {
   padding: 4em 0 1em 0;
+  margin: 0 auto;
   font-family: 'Neue Montreal';
   text-transform: uppercase;
   font-weight: 300;
@@ -452,8 +453,8 @@ footer .social-media {
 
 .p-hero {
   background-image: url(images/performers-hero.jpg);
+  background-size: cover;
   background-position: -16em 0;
-  background-size: 300%;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
@@ -479,7 +480,6 @@ footer .social-media {
 
 .p-hero button {
   margin-left: 9em;
-  margin-bottom: 4.5em;
 }
 
 /* Intro & Spotify section */
@@ -515,9 +515,8 @@ footer .social-media {
 /* Schedule of lineup */
 
 .schedule {
-  margin: 2em 1em;
+  margin: 2em 1em 2em 1em;
   padding-bottom: 2em;
-  border-bottom: #408b86 solid 1px;
 }
 
 table {
@@ -563,71 +562,95 @@ th {
 /* Call to action */
 
 .cta {
-  margin: 4em 1em;
+  padding: 4em 1em 4em 1em;
+  position: relative;
+  background-color:#2d6e75;
+  margin: 0 auto;
+  background-image: url(images/cta/confetti-green.svg);
+  background-size: cover;
+  overflow: hidden
 }
 
+.star {
+  position: absolute;
+  top: -11em;
+  right: -5em;
+  animation: 3s ease-in-out 1s infinite alternate spin;
+}
+
+/* learned the from - to syntax from: https://www.joshwcomeau.com/animation/keyframe-animations/ */
+@keyframes spin {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.cta-para {
+  padding: 1em;
+  color: #144540;
+  background-color: #dffdff;
+  border: #d7f9fc solid 2px;
+  position: relative;
+  margin: auto auto 3em auto;
+  width: 90%;
+  border-radius: 16px;
+}
+
+.flex-me{
+  padding: .5em 0 0 1em;
+  display: flex;
+  align-items: center;
+}
 .cta h2 {
   font-size: 3.5rem;
   margin: 1em 0;
 }
 
-.cta p {
-  padding-bottom: 3em;
+.stand-out p {
+  font-family: 'Neue Montreal', sans-serif;
+  font-weight: 400;
+}
+
+.stand-out {
+  border: white solid 2px;
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 16px;
 }
 
 
 .cta h4 {
-  font-size: 2em;
+  font-size: 1.4em;
   text-align: center;
+  text-transform: initial;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 0;
 }
 
 .cta ul {
-  padding-left: 0;
-  margin-bottom: 3em;
+  padding: 0 0 0 1em;
 }
 
 .cta ul li {
   font-family: 'Neue Montreal', sans-serif;
-  font-size: 1.6rem;
-  ;
+  font-size: 1.4rem;
   padding: .6em;
-  margin: 1.5em auto;
-  border-radius: 25px;
+  margin: 0 auto;
   list-style-type: none;
   font-weight: 500;
+  display: flex;
+  text-align: left;
+  align-items: center;
 }
 
-.cta ul :nth-child(1) {
-  background-color: #A3E7FC;
-  transform: rotate(-5deg);
-}
-
-.cta ul :nth-child(2) {
-  background-color: #D3FF05;
-  transform: skew(-15deg, 15deg);
-}
-
-.cta ul :nth-child(3) {
-  background-color: #84BF17;
-  transform: rotateZ(-6deg);
-}
-
-.cta ul :nth-child(4) {
-  background-color: #47FCFC;
-  transform: skewY(-15deg);
-}
-
-.cta ul :nth-child(5) {
-  background-color: #7BE0D2;
-  transform: translate(20px, 20%);
-  transform: rotate(5deg);
-  transform: skewX(20deg)
-}
-
-.cta ul :nth-child(6) {
-  background-color: #D3FF05;
-  transform: scale(1.3, 1.3);
-  transform: rotate(10deg)
+.cta ul li p {
+  margin: 0 0 0 1em;
+  padding: 0;
 }
 
 .cta button.primary {
