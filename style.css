@@ -151,8 +151,13 @@ nav ul {
   left: 0;
   font-size: 1.6rem;
   text-transform: uppercase;
-  padding-top: 3em;
+  padding: 3em 0 0 0;
 }
+
+nav ul li {
+  padding: 1.5em 0;
+}
+
 
 .show-items {
   display: flex;
@@ -527,7 +532,6 @@ footer .social-media {
 
 .schedule {
   margin: 2em 1em 2em 1em;
-  padding-bottom: 2em;
 }
 
 table {
@@ -573,7 +577,7 @@ th {
 /* Call to action */
 
 .cta {
-  padding: 4em 1em 4em 1em;
+  padding: 6em 1em 4em 1em;
   position: relative;
   margin: 0 auto;
   overflow: hidden
@@ -581,7 +585,7 @@ th {
 
 .star {
   position: absolute;
-  top: -6em;
+  top: -8em;
   right: -12em;
   animation: 2.5s linear 1s infinite alternate spin;
 }
@@ -619,10 +623,6 @@ th {
 }
 
 .stand-out {
-  background-image: url(images/cta/two-stars.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: -1.5em 2em;
   border: white solid 2px;
   background-color: white;
   margin: 0 auto;
@@ -638,6 +638,7 @@ th {
 }
 
 .cta h4 {
+  display: inline-block;
   font-size: 2.5rem;
   text-align: center;
   text-transform: initial;
@@ -645,8 +646,7 @@ th {
   text-align: left;
   margin: 0 auto 0 1em;
   background-image: url(images/yellow-squiggle.svg);
-  background-size: 100%;
-  background-position: center -1.1em;
+  background-size: contain;
   padding: 0 0 .4em 0;
 }
 
