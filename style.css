@@ -155,6 +155,7 @@ nav ul {
   top: -1em;
   left: 0;
   font-size: 1.6rem;
+  letter-spacing: .8px;
   text-transform: uppercase;
   padding: 3em 0 0 0;
 }
@@ -246,7 +247,7 @@ nav a {
   padding: 0;
 }
 
-.performers img {
+.performers-images-1 img, performers-images-2 img {
   text-align: center;
   width: 92%;
   border-radius: 18px;
@@ -288,7 +289,7 @@ button.secondary {
   border-bottom: #408b86 solid 1px;
 }
 
-.experience img {
+.experience-images img {
   width: 90%;
   /*border: 2.5px solid #87AF18;*/
   border-radius: 18px;
@@ -299,17 +300,6 @@ button.secondary {
 
 .experience-music {
   margin-top: 6em;
-}
-
-.experience .primary {
-  background-color: #00ffbe;
-  padding: 1em;
-  border-radius: 25px;
-  text-align: center;
-  border: 1px solid #00ffbe;
-  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
-  margin: 1.5em 0 2em 0;
-  width: 20em;
 }
 
 .experience p {
@@ -327,7 +317,7 @@ button.secondary {
   padding-bottom: 2em;
 }
 
-.about img {
+.fox {
   margin-top: 2em;
   border-radius: 25px;
   width: 60%;
@@ -672,11 +662,6 @@ th {
   letter-spacing: .05rem;
 }
 
-.cta button.primary {
-  padding: 1em;
-}
-
-
 
 /********* Experience Page ***********/
 
@@ -687,6 +672,7 @@ th {
   background-image: url(images/experience/experience-hero.jpg);
   background-position: -35em;
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   color: white;
@@ -844,7 +830,7 @@ details[open] summary .fa-arrow-down {
 
   button.secondary,
   button.primary {
-    width: 20em;
+    width: 17em;
   }
 
   /* Header */
@@ -876,7 +862,8 @@ details[open] summary .fa-arrow-down {
   }
 
   nav ul li {
-    padding: 0 1.5em;
+    padding: 0;
+    margin: 0 1.5em;
     z-index: 0;
   }
 
@@ -888,8 +875,9 @@ details[open] summary .fa-arrow-down {
     transform: rotate(-12deg) scale(1.2);
     background-image: url(images/yellow-squiggle.png);
     background-size: contain;
-    padding: .5em;
+    padding: .5em 0;
     z-index: 1;
+    display: inline-block;
   }
 
   /*** HOMEPAGE ****/
@@ -975,7 +963,7 @@ details[open] summary .fa-arrow-down {
     margin-bottom: 4em;
   }
 
-  .performers img {
+  .performers-images-1 img, .performers-images-2 img {
     width: 95%;
   }
 
@@ -1000,7 +988,7 @@ details[open] summary .fa-arrow-down {
     justify-content: space-between;
   }
 
-  .experience img {
+  .experience-images img {
     margin: 0 0 1em 0;
     padding: 0;
   }
@@ -1036,7 +1024,7 @@ details[open] summary .fa-arrow-down {
     width: 50%;
   }
 
-  .about img {
+  .fox {
     width: 25%;
     margin-top: 0;
   }
@@ -1254,5 +1242,65 @@ details[open] summary .fa-arrow-down {
   .cta ul li {
     justify-content: center;
   }
+
+  /*********Experience Page************/
+
+  /*HERO*/
+  
+
+.e-hero {
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.e-hero .bg-gradient {
+  width:45em;
+  padding-top: 2em;
+  margin: 3em auto;
+  height: 48em;
+}
+
+.e-hero h1 {
+  font-size: 5em;
+  font-weight: 600;
+}
+
+.e-hero p {
+  font-size: 1.8em;
+
+}
+
+
+.e-hero button.secondary {
+  margin: 1.5em auto;
+}
+
+.e-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+/**Stages**/
+
+.stages {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.stages-preamble {
+  width: 45em;
+  margin: 0 auto;
+}
+
+.stages1, .stages2 {
+  display: flex;
+  align-content: center;
+}
+
+.audience-info {
+  width: 60em;
+  margin: 0 auto;
+}
 
 }
