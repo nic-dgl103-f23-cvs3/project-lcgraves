@@ -361,6 +361,10 @@ form {
   align-items: center;
 }
 
+fieldset {
+  border: none;
+}
+
 input,
 label {
   margin: .2em;
