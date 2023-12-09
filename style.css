@@ -99,6 +99,7 @@ a.secondary {
   text-align: center;
   border: 1px solid #14423f;
   background-color: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 4px 8px -px; /* code copied from https://getcssscan.com/css-box-shadow-examples*/
 }
 
 .hero .site-buttons a {
@@ -112,7 +113,15 @@ a.primary {
   border-radius: 25px;
   text-align: center;
   border: 1px solid #00ffbe;
-  box-shadow: rgba(0, 255, 255, 0.55) 0px 5px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 4px 8px -4px;
+}
+
+.hero a.secondary, .p-hero a.secondary, .e-hero a.secondary {
+  box-shadow: rgba(0, 255, 255, 0.55) 0px 2px 8px;
+}
+
+.hero a.primary, .p-hero a.primary, .e-hero a.primary {
+box-shadow: rgba(0, 255, 255, 0.85) 0px 5px 12px;
 }
 
 /* Links & transitions */
@@ -194,7 +203,6 @@ nav a {
 /* HERO */
 
 .video-overlay {
-  margin: 1;
   background-image: url(video/mask-mobile1.png);
   background-size: cover;
   background-position: center;
@@ -228,7 +236,7 @@ nav a {
 }
 
 .hero a.secondary {
-  margin: 3em 1em 1.5em 1em;
+  margin: 1em;
   border-radius: 25px;
   text-align: center;
   border: 1px solid white;
@@ -367,7 +375,7 @@ input {
 .submit {
   background-color: #00ffbe;
   margin: 1.5em auto;
-  padding: 1em .5em 1em .5em;
+  padding: .6em;
   border-radius: 25px;
   display: block;
   border: 1px solid #00ffbe;
@@ -614,8 +622,6 @@ th {
 .stand-out {
   text-align: center;
   margin: 0 auto;
-  border: white solid 2px;
-  background-color: white;
   margin: 0 auto;
   padding-top: 5em;
   width: 90%;
@@ -714,11 +720,8 @@ th {
 .e-hero a.secondary {
   color: white;
   background-color: #225b55;
-}
-
-.e-hero a.secondary {
   border-color: #225b55;
-  margin: 0 auto;
+  margin: 0 auto 2em auto;
 }
 
 /** Stages **/
@@ -1066,7 +1069,7 @@ details[open] summary .fa-arrow-down {
   .submit {
     margin: 3em auto;
     width: 15em;
-    padding: .3em auto;
+    padding: .6em;
     font-size: 1.5rem;
   }
 
