@@ -121,7 +121,7 @@ a.primary {
 }
 
 .hero a.secondary, .p-hero a.secondary, .e-hero a.secondary {
-  box-shadow: rgba(0, 255, 255, 0.55) 0px 2px 8px;
+  box-shadow: rgba(255, 255, 255, 0.55) 0px 5px 12px;
 }
 
 .hero a.primary, .p-hero a.primary, .e-hero a.primary {
