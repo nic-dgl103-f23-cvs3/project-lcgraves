@@ -218,7 +218,7 @@ nav a {
   background-color: #14423f;
   margin: 0 auto;
   position: absolute;
-  top: -5em;
+  top: -4.5em;
   left: 0;
   right: 0;
   width: 100vw;
@@ -265,7 +265,7 @@ nav a {
   padding: 0;
 }
 
-.performers-images-1 img, performers-images-2 img {
+.performers-images-1 img, .performers-images-2 img {
   text-align: center;
   width: 92%;
   border-radius: 18px;
@@ -640,7 +640,7 @@ th {
   text-transform: initial;
   font-weight: 500;
   margin: 0 auto 0 1em;
-  background-image: url(images/yellow-squiggle.svg);
+  background-image: url(images/yellow-squiggle.png);
   background-size: contain;
   padding: 0 0 .4em 0;
 }
@@ -1247,7 +1247,7 @@ details[open] summary .fa-arrow-down {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-content: center;
+    align-items: center;
   }
 
   .stand-out {
