@@ -69,8 +69,14 @@ p {
 
 /* Buttons! */
 
+.site-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-.site-buttons a {
+.site-buttons a, a.primary, a.secondary {
+  font-family: 'Neue Montreal', sans-serif;
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
@@ -80,24 +86,29 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-}
-
-.site-buttons button {
-  width: 20em;
-  font-weight: 400;
-}
-
-.secondary a,
-.primary a {
   color: #14423f;
+  font-weight: 400;
   font-size: 1.3rem;
-  text-decoration: none;
-  text-transform: uppercase;
+  width: 15em;
 }
 
-button.primary {
-  background-color: #00ffbe;
+
+a.secondary {
   margin: 1em;
+  border-radius: 25px;
+  text-align: center;
+  border: 1px solid #14423f;
+  background-color: transparent;
+}
+
+.hero .site-buttons a {
+  width: 18em;
+}
+
+
+a.primary {
+  background-color: #00ffbe;
+  margin: 1em auto;
   border-radius: 25px;
   text-align: center;
   border: 1px solid #00ffbe;
@@ -201,7 +212,6 @@ nav a {
   width: 100vw;
   height: 100vh;
   z-index: -1;
-
 }
 
 .video-overlay {
@@ -217,18 +227,14 @@ nav a {
   margin-top: 1.5em;
 }
 
-.hero button.secondary {
+.hero a.secondary {
   margin: 3em 1em 1.5em 1em;
   border-radius: 25px;
   text-align: center;
   border: 1px solid white;
   background-color: #14423f;
   box-shadow: rgba(0, 255, 255, 0.35) 0px 5px 15px;
-}
-
-.hero .site-buttons .secondary a {
   color: white;
-  font-size: 1.3rem;
 }
 
 /* Performers */
@@ -262,24 +268,6 @@ nav a {
   padding: .5em 0;
 }
 
-button.secondary,
-button.primary {
-  width: 15em;
-}
-
-button.primary {
-  margin-bottom: 2em;
-}
-
-button.secondary {
-  margin: 1em;
-  border-radius: 25px;
-  text-align: center;
-  border: 1px solid #14423f;
-  background-color: transparent;
-}
-
-
 
 /* The Experience */
 
@@ -296,6 +284,11 @@ button.secondary {
   border: #aee5ff solid 2px;
   margin-top: 2em;
   margin-bottom: 0;
+}
+
+.experience a.primary  {
+  margin: 0 auto 3em auto;
+  width: 20em;
 }
 
 .experience-music {
@@ -315,6 +308,10 @@ button.secondary {
 .about {
   margin: 0 1em;
   padding-bottom: 2em;
+}
+
+.about a.secondary {
+  margin: 0 auto;
 }
 
 .fox {
@@ -516,6 +513,8 @@ footer .social-media {
 
 .spotify iframe {
   width: 90%;
+  border-radius: 16px;
+  border: none;
 }
 
 .spotify p {
@@ -708,16 +707,17 @@ th {
   height: 36em;
 }
 
-.e-hero button.primary {
+.e-hero a.primary {
   margin: 1.5em auto;
 }
 
-.e-hero button.secondary a {
+.e-hero a.secondary {
   color: white;
+  background-color: #225b55;
 }
 
-.e-hero button.secondary {
-  border-color: white;
+.e-hero a.secondary {
+  border-color: #225b55;
   margin: 0 auto;
 }
 
@@ -727,14 +727,19 @@ th {
   margin: 1em;
 }
 
-figure {
-  margin: 3em 1em;
+.stages-preamble {
+margin-bottom: 3em;
 }
 
-figcaption {
+.stage-detail {
+  margin: 2em 1em;
+}
+
+h3 {
+  text-align: center;
   font-size: 2.5rem;
-  padding: 0 .5em;
   font-weight: 400;
+  margin: 0 auto .3em auto;
 }
 
 /** Audience Info **/
@@ -821,16 +826,16 @@ details[open] summary .fa-arrow-down {
   }
 
   /* Global */
-
-  .hero .site-buttons .secondary a,
-  .primary a,
-  .secondary a {
+  .hero a.secondary, .hero a.primary,
+  a.primary,
+  a.secondary {
     font-size: 1.5rem;
+    margin-top: 1em;
   }
-
-  button.secondary,
-  button.primary {
-    width: 17em;
+  
+  .site-buttons {
+    flex-direction: row;
+    margin: 0 auto;
   }
 
   /* Header */
@@ -1018,10 +1023,13 @@ details[open] summary .fa-arrow-down {
     margin-top: 0;
   }
 
-
   .about-info {
     text-align: left;
     width: 50%;
+  }
+
+  .about a.secondary {
+    margin: 0;
   }
 
   .fox {
@@ -1229,7 +1237,7 @@ details[open] summary .fa-arrow-down {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
   }
 
   .stand-out {
@@ -1272,11 +1280,11 @@ details[open] summary .fa-arrow-down {
 }
 
 
-.e-hero button.secondary {
+.e-hero a.secondary {
   margin: 1.5em auto;
 }
 
-.e-buttons {
+.e-hero .site-buttons {
   display: flex;
   flex-direction: column;
 }

@@ -68,21 +68,16 @@
     </header>
     <main>
         <section class="hero wrapper-div">
-                <video width="100%" class="background-video" autoplay loop muted playsinline
+                <video width="100" class="background-video" autoplay loop muted playsinline
                     title="people dancing at outdoor festival" id="hero-video">
                     <source src="video/hero-video.mp4" type="video/mp4">
                 </video>
                 <div class="video-overlay">
                     <h1>Vancouver Island</h1>
                     <div class="site-buttons">
-                        <button class="secondary hvr-pulse">
-                            <a href="performers.html">July 12 - 14 2024<br>30 years of MusicFest!<img
-                                src="images/icons/arrow-right-white.svg" width="16"></a>
-                        </button>
-                        <button class="primary hvr-pulse">
-                            <a href="tickets.hmtl">Early bird tickets<br>on sale Dec 1st!<img
-                                src="images/icons/arrow-right-green.svg" width="16"></a>
-                        </button>
+                        <a class="secondary" href="performers.html">July 12 - 14 2024<br>30 years of MusicFest!<img
+                                src="images/icons/arrow-right-white.svg" width="16" alt="right arrow icon"></a>
+                        <a class="primary" href="tickets.hmtl">Early bird tickets<br>on sale Dec 1st!<img src="images/icons/arrow-right-green.svg" width="16" alt="right arrow icon"></a>
                     </div>
                 </div>
             </section>
@@ -98,25 +93,24 @@
             <h4>Last year's headliners</h4>
             <div class="performers-images-1"> <!--edit pictures again in photoshop so that ratios all match-->
                 <figure>
-                    <img src="images/artists/sarah-mclachlan.png" alt="artist sarah mclachlan" width="100%">
+                    <img src="images/artists/sarah-mclachlan.png" alt="artist sarah mclachlan" width="100">
                 </figure>
                 <figure>
-                    <img src="images/artists/rickie-lee-jones.png" alt="artist rickie lee jones" width="100%">
+                    <img src="images/artists/rickie-lee-jones.png" alt="artist rickie lee jones" width="100">
                 </figure>
             </div>
             <div class="performers-images-2">
                 <figure>
                     <img src="images/artists/galactic.png" alt="artist galactic featuring anjelika joseph"
-                        width="100%">
+                        width="100">
                 </figure>
                 <figure>
-                    <img src="images/artists/the-blue-and-gold.png" alt=" artist the blue and gold" width="100%">
+                    <img src="images/artists/the-blue-and-gold.png" alt=" artist the blue and gold" width="100">
                 </figure>
             </div>
             <div class="site-buttons">
-                <button class="secondary"><a href="performers.html">The full
-                        line-up<img src="images/icons/arrow-right-green.svg" width="16"></a></button>
-                <button class="primary"><a href="tickets.html">Buy tickets!<img src="images/icons/arrow-right-green.svg" width="16"></a></button>
+                <a class="secondary" href="performers.html">The full line-up<img src="images/icons/arrow-right-green.svg" width="16" alt="right arrow icon"></a>
+                <a class="primary" href="tickets.html">Buy tickets!<img src="images/icons/arrow-right-green.svg" width="16" alt="right arrow icon"></a>
             </div>
         </section>
         <section class="experience">
@@ -126,24 +120,24 @@
                 the Comox Valley Folk Society and a collective of 1,300 amazing volunteers. This unforgettable weekend
                 of camraderie, festival magic, food and drink transforms the <strong>Courtenay Exhibition
                     Grounds</strong> into a musical wonderland.</p>
-            <button class="primary site-buttons"><a href="experience.html">Explore the full experience<img src="images/icons/arrow-right-green.svg" width="16"></a></button>
+            <a class="primary" href="experience.html">Explore the full experience<img src="images/icons/arrow-right-green.svg" width="16" alt="right arrow icon"></a>
             <div class="experience-images"> <!--make all image dimensions the same-->
                 <figure>
                     <img class="experience-music" src="images/experience/heart-hands-concert.jpg"
                         alt="At a concert where audience members holding up hands in heart shape"
-                        width="100%">
+                        width="100">
                     <p>Immerse yourself in an <strong>eclectic mix of Roots, Folk, and Global music</strong>, featuring
                         a stellar lineup of artists from local gems to global icons.</p>
                 </figure>
                 <figure>
                     <img src="images/experience/women-festival.jpg" alt="Two women at a music festival"
-                        width="100%">
+                        width="100">
                     <p>This festival isn't just about music. <strong>It's a cultural odyssey</strong> with an array of
                         workshops, jam-packed jam sessions, and soul-stirring concerts.</p>
                 </figure>
                 <figure>
                     <img src="images/experience/camping.jpg" alt="woman camping and standing in front of her tent"
-                        width="100%">
+                        width="100">
                     <p><strong>Our campgrounds lie along the serene Tsolum River, surrounded by lush forests.</strong>
                         Our rustic camping experience is designed for those who share our love of nature, music and
                         community spirit.</p>
@@ -156,23 +150,23 @@
                 <p>At our core, we celebrate diversity in our volunteers and performers, and are dedicated to an
                     inclusive, uplifting and eco-friendly vibe. Join the movement where positivity, music, culture, and
                     environmental consciousness converge!</p>
-                <button class="secondary site-buttons"><a href="about.html">Learn more<img src="images/icons/arrow-right-green.svg" width="16"></a></button>
+                <a class="secondary" href="about.html">Learn more<img src="images/icons/arrow-right-green.svg" width="16" alt="right arrow icon"></a>
             </div>
-            <img class="fox" src="images/fox-music.jpg" alt="fox playing the mandolin" width="100%">
+            <img class="fox" src="images/fox-music.jpg" alt="fox playing the mandolin" width="100">
         </section>
         <section class="sign-up">
             <h2>Get the first look at 2024's lineup</h2>
-            <form action="#" method="post">
+            <form method="post" action="#">
                 <h4>Sign up for our newsletter</h4>
                 <fieldset>
-                    <label for="username">First</label>
-                    <input type="name" name="firstname">
-                    <label for="username">Last</label>
-                    <input type="name" name="lastname">
-                    <label for="email-address">Email</label>
-                    <input class="email" type="text" email="email-address" required>
+                    <label for="userfirst">First</label>
+                    <input type="text" id="userfirst" name="firstname">
+                    <label for="userlast">Last</label>
+                    <input type="text" id="userlast" name="lastname">
+                    <label for="email">Email<span class="label-required">*required</span></label>
+                    <input class="email" type="email" id="email" name="email" required>
                 </fieldset>
-                <input class="submit" type="submit" name="submit" value="Sign up">
+                <input class="submit" type="submit" value="Sign up">
             </form>
         </section>
         <section class="territory-acknowledgement">
@@ -186,7 +180,7 @@
             </div>
             <div class="territory-image">
                 <img src="images/komoks-first-nation.jpg" alt="K'ómoks First Nation dancers perform at ceremony"
-                    width="100%"> <!--maybe change to black and white since doesn't go with website colours-->
+                    width="100"> <!--maybe change to black and white since doesn't go with website colours-->
             </div>
         </section>
     </main>
