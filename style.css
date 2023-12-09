@@ -106,7 +106,6 @@ a.secondary {
   width: 18em;
 }
 
-
 a.primary {
   background-color: #00ffbe;
   margin: 1em auto;
@@ -833,7 +832,7 @@ details[open] summary .fa-arrow-down {
   a.primary,
   a.secondary {
     font-size: 1.5rem;
-    margin-top: 1em;
+    margin: 1em 1.5em;
   }
   
   .site-buttons {
@@ -1050,6 +1049,13 @@ details[open] summary .fa-arrow-down {
 
   .sign-up h2 {
     margin: 1em auto;
+  }
+
+  .sign-up h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 2rem;
+    padding: 1em;
   }
 
   .sign-up {
