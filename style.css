@@ -218,7 +218,7 @@ nav a {
   background-color: #14423f;
   margin: 0 auto;
   position: absolute;
-  top: -4.5em;
+  top: -4em;
   left: 0;
   right: 0;
   width: 100vw;
@@ -254,6 +254,7 @@ nav a {
 .performers {
   margin: 1em;
   border-bottom: #408b86 solid 1px;
+  padding-bottom: 1.5em;
 }
 
 .performers-info p {
@@ -742,7 +743,7 @@ margin-bottom: 3em;
   margin: 2em 1em;
 }
 
-h3 {
+.stages h3 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 400;
