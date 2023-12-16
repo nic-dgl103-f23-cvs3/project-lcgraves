@@ -1157,6 +1157,10 @@ details[open] summary .fa-arrow-down {
     font-size: 1.5rem;
   }
 
+  .privacy-disclosure {
+    max-width: 1170px;
+  }
+
   .privacy-disclosure p,
   .privacy-disclosure a {
     font-size: 1.4rem;
