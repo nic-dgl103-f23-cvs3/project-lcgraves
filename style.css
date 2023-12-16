@@ -991,6 +991,10 @@ details[open] summary .fa-arrow-down {
     padding-bottom: 2em;
   }
 
+  .experience h2 {
+    margin-top: 1em;
+  }
+
   .experience p {
     width: 55%;
   }
@@ -1025,7 +1029,7 @@ details[open] summary .fa-arrow-down {
   .about {
     display: flex;
     justify-content: center;
-    padding-top: 2em;
+    padding-top: 1em;
     margin: 3em auto;
     max-width: 1170px;
   }
