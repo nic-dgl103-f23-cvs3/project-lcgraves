@@ -960,6 +960,7 @@ details[open] summary .fa-arrow-down {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    padding-bottom: 2em;
   }
 
   .watch-out {
@@ -975,7 +976,7 @@ details[open] summary .fa-arrow-down {
 
   .performers-images-2 {
     display: flex;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
   }
 
   .performers-images-1 img, .performers-images-2 img {
@@ -987,6 +988,7 @@ details[open] summary .fa-arrow-down {
   .experience {
     max-width: 1170px;
     margin: 0 auto 5em auto;
+    padding-bottom: 2em;
   }
 
   .experience p {
@@ -995,7 +997,6 @@ details[open] summary .fa-arrow-down {
 
   .experience button.primary {
     width: 25em;
-    margin-bottom: 3em;
   }
 
   .experience-images {
@@ -1010,7 +1011,7 @@ details[open] summary .fa-arrow-down {
 
   .experience figure {
     width: 33%;
-    margin: 4em 0;
+    margin: 3em 0;
   }
 
   .experience-images p {
